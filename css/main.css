@@ -1,0 +1,143 @@
+/*ESTRUCTURA*/
+body, html{
+    width: 100%;
+    font-family:  'Quantico';font-size: 22px;
+    background-image: url(circuitoVerde1.png);
+    margin: 0;
+}
+#DIV-ARTICLE-EVENTOS{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    margin-left: 3%;
+    margin-right: -2%;
+}
+#ARTICLE-EVENTOS{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 19% 79%;
+    grid-template-rows: 50% 50%;
+}
+#TITULO-SECTION-EVENTOS{
+    grid-column: 3 span;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+}
+.IMG-SECTION{
+    margin-top: 5%;
+    width: 70%;
+}
+/*/ESTRUCTURA*/
+
+
+/*DISEÑO*/
+    /*HEADER*/
+        header {
+            background-color: rgb(2, 24, 89, 100%);
+        }
+        #HEADER-H1-MENU{
+            color: white;
+            font-size: 20px;
+            font-family: 'Aldrich';
+            font-weight: normal;
+        
+        }
+        #tituloHeader {
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #0476D9;
+            font-family: 'Quantico';
+            font-style: italic;
+        }
+        .container_menu {
+            height: 42px;
+            width: 140px;
+        }
+        .menu {
+            background-color: white;
+            width: 41px;
+            height: 4px;
+            border-radius: 5px;
+            margin-top: 6px;
+        }
+        hr {
+            border: 3px solid rgba(4, 191, 104, 1);
+        }
+    /*/HEADER*/
+    /*APARTADO NOVEDADES*/
+        .novedades h1 {
+            font-family: Quantico;
+            color: #04BF68;
+            background-color: rgb(4, 191, 104, 20%);
+            margin-left: 20px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        .novedades h2 {
+            font-family: Quantico;
+            color: rgb(4, 191, 104, 80%);
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        .novedades {
+            background-color: rgb(2, 24, 89, 100%);
+            width: 97%;
+        }
+        .novedades h4 {
+            background-color: white;
+            font-family: Quantico;
+            font-size: 13px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            width: 25%;
+            
+        }
+        .novedades section {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .div_secciones {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items: center;
+            margin-left: 15px;
+        }
+        .div_secciones img {
+            color: white;
+        }
+        .img-genji {
+            height: 300px;
+            width: 350px;
+        }
+    /*APARTADO NOVEDADES*/
+        #ARTICLE-EVENTOS{
+            background-color: rgb(34, 57, 124, 40%);
+            border-radius: 10px;
+        }
+
+        #TITULO-SECTION-EVENTOS{
+            font-size: 2.5em;
+            font-weight: bold;
+            font-style: italic;
+            padding-left: 2%;
+            background-color: rgb(34, 57, 124, 50%);
+        }
+        .SECTION-TITULO-EVENTO{
+            margin-right: 15%;
+            margin-left: 15%;
+            background-color: white;
+            border-radius: 10px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+/*/DISEÑO*/
+
+
+/*MEDIA QUERIS*/
+
+/*/MEDIA QUERIS*/
