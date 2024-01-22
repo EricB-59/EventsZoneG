@@ -1,0 +1,53 @@
+body, html {
+    padding:0;
+    margin: 15px;
+    width: 100%;
+}
+ .novedades h1 {
+    font-family: Quantico;
+    color: #04BF68;
+    background-color: rgb(4, 191, 104, 20%);
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.novedades h2 {
+    font-family: Quantico;
+    color: rgb(4, 191, 104, 80%);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.novedades {
+    background-color: #021859;
+    width: 97%;
+}
+.novedades h4 {
+    background-color: white;
+    font-family: Quantico;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 25%;
+    
+}
+.novedades section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.div_secciones {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-left: 15px;
+}
+.div_secciones img {
+    color: white;
+}
+.img-genji {
+    height: 300px;
+    width: 350px;
+}
