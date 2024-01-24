@@ -7,15 +7,22 @@ body, html {
     font-family: Quantico;
     color: #04BF68;
     background-color: rgb(4, 191, 104, 20%);
-    margin-left: 20px;
     padding-left: 10px;
     padding-bottom: 10px;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 2.5px;
 }
 .novedades h2 {
     font-family: Quantico;
-    color: rgb(4, 191, 104, 80%);
+    color: #021859;
+    font-size: 2.5em;
+    margin-left: 0px;
     writing-mode: vertical-lr;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
+    -webkit-text-stroke: 0.1px;
+    -webkit-text-stroke-color: rgb(4, 191, 104, 80%);
 }
 .novedades {
     background-color: #021859;
@@ -28,26 +35,32 @@ body, html {
     text-align: center;
     padding: 5px;
     border-radius: 10px;
-    width: 25%;
+    width: 300px;
     
 }
-.novedades section {
+.novedades > .div_secciones section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .div_secciones {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    align-items: center;
+    align-items:center;
     margin-left: 15px;
+}
+.div_secciones section img {
+    width: 300px;
 }
 .div_secciones img {
     color: white;
+    margin-right: 5%;
 }
 .img-genji {
-    height: 300px;
-    width: 350px;
+    height: 350px;
+    width: 400px;
 }
