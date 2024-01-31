@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    margin-left: 2%;
+    margin-left: 1%;
     padding: 0;
     width: 100%;
     background-image: url(./images/circuitoGris.png);
@@ -56,8 +56,12 @@ article {
     width: 360px;
     height: 307px;
     border-radius: 30px;
-    position: relative;
-
+    position:relative;
+    margin-right: 3%;
+ }
+ .section-noticias-recientes {
+   display: flex;
+   justify-content: space-evenly;
  }
  section .img-noticia {
     width: 100%;
@@ -65,7 +69,7 @@ article {
  .footer-section-noticia {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 25px;
  }
  .fecha-noticia {
     display: flex;
