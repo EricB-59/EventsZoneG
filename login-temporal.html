@@ -34,7 +34,7 @@
       margin-top: 8px;
       margin-bottom: 8px;
       box-sizing: border-box;
-      border: 2px solid rgba(4, 191, 104, 1);
+      border-bottom: 2px solid rgba(4, 191, 104, 1);
       border-radius: 5px;
       background-color: transparent;
       color: #ffffff;
@@ -74,11 +74,24 @@
         color: white;
     }
 
+    #IMAGEN-LOGO{
+      width: 49%;
+      transform: scale(50%);
+      margin-top: -10%;
+    }
+
+    h2{
+      display: inline-block;
+      width: 49%;
+    }
   </style>
 </head>
 <body>
   <div class="login-container">
-    <h2>Login</h2>
+    <div style="display: inline-block;">
+      <h2>Login</h2>
+      <img style="display: inline-block;" src="images/LogoCuentaPerfil.svg" alt="" id="IMAGEN-LOGO">
+    </div>
     <form action="#" method="post">
       <div class="input-group">
         <input class="input" type="email" name="email" placeholder="Correo Electrónico" required>
