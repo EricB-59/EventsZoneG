@@ -1,3 +1,42 @@
+/*ESTRUCTURA*/
+body,
+html {
+    width: 100%;
+    font-family: 'Quantico';
+    font-size: 22px;
+    background-image: url(circuitoVerde1.png);
+    margin: 0;
+}
+
+#DIV-ARTICLE-EVENTOS {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    margin-left: 3%;
+    margin-right: -2%;
+}
+
+#ARTICLE-EVENTOS {
+    width: 99%;
+    display: grid;
+    grid-template-columns: 19% 79%;
+    grid-template-rows: 50% 50%;
+}
+
+#TITULO-SECTION-EVENTOS {
+    grid-column: 3 span;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.IMG-SECTION {
+    margin-top: 5%;
+    width: 70%;
+}
+
+/*/ESTRUCTURA*/
+
+/*HEADER*/
 * {
     box-sizing: border-box;
     line-height: 1.5;
@@ -278,14 +317,6 @@ header > .header-nav > .redes {
 }
 
 
-
-
-
-
-
-
-
-
 /*@media screen and (max-width: 1484px) {
     .header-nav {
         padding: 0 29px 0 109px;
@@ -329,3 +360,93 @@ header {
     margin: 0;
 }
 }*/
+
+
+/*/HEADER*/
+/*APARTADO NOVEDADES*/
+
+/*APARTADO NOVEDADES*/
+#ARTICLE-EVENTOS {
+    background-color: rgb(34, 57, 124, 40%);
+    border-radius: 10px;
+}
+
+#TITULO-SECTION-EVENTOS {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 2%;
+    background-color: rgb(34, 57, 124, 50%);
+}
+
+.SECTION-TITULO-EVENTO {
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/*/DISEÑO*/
+
+/*LOGIN*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#showPopup:hover~#loginPopup {
+    display: flex;
+}
+
+#hidePopup:hover {
+    display: none;
+}
+
+/*/LOGIN*/
+
+/*MEDIA QUERIS*/
+
+/*/MEDIA QUERIS*/
