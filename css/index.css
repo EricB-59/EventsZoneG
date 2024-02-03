@@ -1,39 +1,10 @@
 /*ESTRUCTURA*/
-body,
-html {
+body, html {
     width: 100%;
     font-family: 'Quantico';
-    font-size: 22px;
     background-image: url(circuitoVerde1.png);
     margin: 0;
 }
-
-#DIV-ARTICLE-EVENTOS {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 100%;
-    margin-left: 3%;
-    margin-right: -2%;
-}
-
-#ARTICLE-EVENTOS {
-    width: 99%;
-    display: grid;
-    grid-template-columns: 19% 79%;
-    grid-template-rows: 50% 50%;
-}
-
-#TITULO-SECTION-EVENTOS {
-    grid-column: 3 span;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
-}
-
-.IMG-SECTION {
-    margin-top: 5%;
-    width: 70%;
-}
-
 /*/ESTRUCTURA*/
 
 /*HEADER*/
@@ -364,29 +335,132 @@ header {
 
 /*/HEADER*/
 /*APARTADO NOVEDADES*/
-
-/*APARTADO NOVEDADES*/
-#ARTICLE-EVENTOS {
-    background-color: rgb(34, 57, 124, 40%);
-    border-radius: 10px;
+ .novedades h1 {
+    font-family: Quantico;
+    color: #04BF68;
+    background-color: rgb(4, 191, 104, 20%);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 2.5px;
 }
-
-#TITULO-SECTION-EVENTOS {
+.novedades h2 {
+    font-family: Quantico;
+    color: #021859;
     font-size: 2.5em;
+    margin-left: 0px;
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(4, 191, 104, 80%);
+    transform: translate(0%, -8%);
+}
+.novedades {
+    background-color: #021859;
+    margin-top: 190px;
+    width: 100%;
+}
+.novedades h4 {
+    background-color: white;
+    font-family: Quantico;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 350px;
+    
+}
+.novedades > .div_secciones section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.div_secciones {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-left: 15px;
+}
+.div_secciones section img {
+    width: 350px;
+    margin-top: -30px;
+}
+.div_secciones img {
+    color: white;
+    margin-right: 5%;
+}
+.img-genji {
+    height: 350px;
+    width: 400px;
+}
+/*/APARTADO NOVEDADES*/
+
+/*APARTADO EVENTOS*/
+/*ESTRUCTURA*/
+#DIV-ARTICLE-EVENTOS{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    margin-left: 3%;
+    margin-right: -2%;
+}
+#ARTICLE-EVENTOS{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 19% 79%;
+    grid-template-rows: 50% 50%;
+}
+#TITULO-SECTION-EVENTOS{
+    grid-column: 3 span;
+    font-size: 30px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 4.5em;
     font-weight: bold;
     font-style: italic;
     padding-left: 2%;
     background-color: rgb(34, 57, 124, 50%);
 }
-
-.SECTION-TITULO-EVENTO {
+.IMG-SECTION{
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin: 5px;
+    border-radius: 10px; 
+}
+#IMG-FIGURA-EVENTOS{
+    width: 110%;
+    transform: translate(0%, -5%);
+    margin: 0;
+}
+/*/ESTRUCTURA*/
+/*DISEÑO*/
+#ARTICLE-EVENTOS{
+    background-color: rgb(34, 57, 124, 40%);
+    border-radius: 10px;
+}
+.SECTION-TITULO-EVENTO{
+    font-family: Quantico;
+    font-size: 30px;
     margin-right: 15%;
-    margin-left: 15%;
-    background-color: white;
+    margin-left: 10%;
+    background-color: rgb(34, 57, 124, 50%);
     border-radius: 10px;
     padding-top: 2%;
     padding-bottom: 2%;
+    width: 80%;
 }
+.section{
+    text-align: center;
+}
+/*/DISEÑO*/
+/*/APARTADO EVENTOS*/
 
 /*/DISEÑO*/
 
