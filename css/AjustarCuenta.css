@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.52);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100%;
+}
+.container-ajustar {
+    width: 588px;
+    height: 663px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 4px 4px 15px rgba(4, 191, 104, 0.4);
+}
+.container-ajustar h1 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    font-family: 'NATS';
+    font-weight: normal;
+    margin: 0;
+    height: 97px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="css/CrearCuenta.css">
+    <link href="https://fonts.cdnfonts.com/css/nats" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/krona-one" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jaldi" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-crear">
+        <h1>CREAR CUENTA</h1>
+        <div class="foto-crearcuenta">
+            <div class="foto">
+                <div class="circulo-camara">
+                    <img src="images/camaraPerfil.svg" alt="cámara">
+                </div>
+            </div>
+        </div>
+        <form action="#" method="POST">
+            <label class="name-user"> NOMBRE USUARIO <br>
+                <img class="icono-nameuser" src="images/user.svg" alt="icono">
+                <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO">
+            </label>
+            <p class="reglas reglas_nameuser">El nombre debe tener al menos 4 caracteres.</p>
+            <div class="div-correo">
+                <img src="images/correo.svg" alt="icono">
+                <input  type="email" placeholder="CORREO ELECTRÓNICO"><br>
+            </div>
+            <div class="div-password">
+                <img src="images/password.svg" alt="icono">
+                <input type="password" placeholder="CONTRASEÑA"><br>
+            </div>
+            <p class="reglas reglas_password">La contraseña debe tener al menos 5 caracteres.</p>
+            <div class="div-password">
+                <img src="images/password.svg" alt="icono">
+                <input type="password" placeholder="CONFIRMAR CONTRASEÑA">
+            </div>
+            <div class="container-enviar">
+                <div>
+                    <p class="reglas">* Todos los campos son obligatorios.</p>
+                </div>
+                <div>
+                    <input class="boton-enviar" type="submit" value="CREAR CUENTA">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
