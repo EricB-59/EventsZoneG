@@ -2,7 +2,7 @@
 body, html {
     width: 100%;
     font-family: 'Quantico';
-    background-image: url(circuitoVerde1.png);
+    background-image: url(../images/Others/circuitoGris.png);
     margin: 0;
 }
 /*/ESTRUCTURA*/
@@ -20,6 +20,7 @@ header {
     height: 184px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 .header-container {
     width: 100%;
@@ -339,8 +340,9 @@ header {
     font-family: Quantico;
     color: #04BF68;
     background-color: rgb(4, 191, 104, 20%);
-    padding-left: 10px;
+    padding-left: 35px;
     padding-bottom: 10px;
+    padding-top: 10px;
     font-size: 3.5em;
     font-weight: bold;
     font-style: italic;
@@ -349,47 +351,62 @@ header {
 .novedades h2 {
     font-family: Quantico;
     color: #021859;
-    font-size: 2.5em;
-    margin-left: 0px;
+    font-size: 3em;
+    margin-left: 10px;
     writing-mode: vertical-lr;
     transform: rotate(360deg);
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: rgb(4, 191, 104, 80%);
-    transform: translate(0%, -8%);
+    transform: translate(0%, -5%);
 }
 .novedades {
     background-color: #021859;
-    margin-top: 190px;
-    width: 100%;
+    margin-top: 230px;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 15px;
+    margin-bottom: 2.5%;
 }
 .novedades h4 {
-    background-color: white;
-    font-family: Quantico;
-    font-size: 13px;
     text-align: center;
-    padding: 5px;
+    color: rgb(4, 191, 104, 80%);
+    font-family: Quantico;
+    font-size: 30px;
+    margin-right: 15%;
+    margin-left: 11px;
+    background-color: rgb(4, 191, 104, 20%);
     border-radius: 10px;
-    width: 350px;
-    
+    padding-top: 4%;
+    padding-bottom: 2%;
+    width: 370px; 
+    margin-top: -15px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(4, 191, 104, 20%);
+    border-bottom: rgb(4, 191, 104, 80%) 5px solid;
 }
 .novedades > .div_secciones section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .div_secciones {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     align-items:center;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .div_secciones section img {
-    width: 350px;
-    margin-top: -30px;
+    transform: translate(1.5%, 0%);
+    width: 370px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin: 5px;
+    border-radius: 5px; 
+    border-bottom: rgb(4, 191, 104, 80%) 5px solid;
 }
 .div_secciones img {
     color: white;
@@ -405,13 +422,16 @@ header {
 /*ESTRUCTURA*/
 #DIV-ARTICLE-EVENTOS{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30% 1%;
     grid-template-rows: 100%;
     margin-left: 3%;
     margin-right: -2%;
 }
 #ARTICLE-EVENTOS{
-    width: 100%;
+    width: 95%;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 15px;
     display: grid;
     grid-template-columns: 19% 79%;
     grid-template-rows: 50% 50%;
@@ -433,11 +453,14 @@ header {
     object-fit: cover; 
     margin: 5px;
     border-radius: 10px; 
+    border-bottom: #000000 5px solid;
 }
 #IMG-FIGURA-EVENTOS{
-    width: 110%;
-    transform: translate(0%, -5%);
+    width: 95%;
+    transform: translate(10%, -3%);
     margin: 0;
+    border-right: 15px rgb(34, 57, 124, 50%) solid;
+    border-radius: 10px;
 }
 /*/ESTRUCTURA*/
 /*DISEÑO*/
@@ -448,17 +471,31 @@ header {
     font-family: Quantico;
     font-size: 30px;
     margin-right: 15%;
-    margin-left: 10%;
+    margin-left: 3%;
     background-color: rgb(34, 57, 124, 50%);
     border-radius: 10px;
     padding-top: 2%;
     padding-bottom: 2%;
-    width: 80%;
+    width: 94%;
+    margin-top: -15px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
+    border-bottom: #000000 5px solid;
 }
 .section{
     text-align: center;
+}
+#EVENTOS-TEXTLATERAL{
+    font-family: Quantico;
+    color: #000000;
+    font-size: 3em;
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    transform: translate(0%, 2%);
+    font-style: italic;
+    margin-left: 25px;
 }
 /*/DISEÑO*/
 /*/APARTADO EVENTOS*/

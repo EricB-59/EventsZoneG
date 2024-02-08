@@ -13,6 +13,7 @@ header {
     height: 184px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 .header-container {
     width: 100%;
@@ -283,10 +284,9 @@ header > .header-nav > .redes {
 /HEADER
 **/
 
-
 body, html{
     background-color: rgb(242, 243, 244, 100%);
-    background-image: url(../images/circuitoGris.png);
+    background-image: url(../images/Others/circuitoGris.png);
     width: 95%;
 }
 
@@ -300,11 +300,45 @@ body, html{
     row-gap: 15%;
 }
 .EVENTOS{
-    filter: drop-shadow(15px 15px 5px rgb(0, 0, 0, 50%));
+    filter: drop-shadow(15px 15px 5px rgba(0, 0, 0, 0.5));
+
+}
+
+
+#DIV-VALORANT:hover #EVENTO-VALORANT-FIGURA{
+    right: 46%;
+}
+#DIV-VALORANT:hover #LOGO-VALORANT{
+    scale: 130%;
+    transform: translate(35%, 45%);
+}
+
+#DIV-LOL:hover #EVENTO-LOL-FIGURA{
+    left: 90%;
+}
+#DIV-LOL:hover #LOGO-LOL{
+    scale: 130%;
+    transform: translate(30%, 75%);
+}
+
+#DIV-CSGO:hover #EVENTO-CSGO-FIGURA{
+    right: 46%;
+}
+#DIV-CSGO:hover #LOGO-CSGO{
+    scale: 130%;
+    transform: translate(25%, 65%);
+}
+
+#DIV-DOTA2:hover #EVENTO-DOTA2-FIGURA{
+    left: 90%;
+}
+#DIV-DOTA2:hover #LOGO-DOTA2{
+    scale: 130%;
+    transform: translate(16%, 30%);
 }
 
 .LOGOS{
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     transform:translate(45%, 50%);
 }
@@ -322,6 +356,7 @@ body, html{
     position: absolute;
     transform: translate(-30%, -10%);
 }
+
 #EVENTO-CSGO-FIGURA{
     transform: translate(-40%, -10%);
 }
@@ -347,4 +382,3 @@ body, html{
         display: none;
     }
 }
-
