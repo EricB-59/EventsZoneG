@@ -127,7 +127,7 @@ nav {
 .fotouser {
     width: 61px;
     height: 61px;
-    background-image: url(../MAQUETACIÓN-WEB/imagenes/FotoPerfil.svg);
+    background-image: url(../images/Others/FotoPerfil.svg);
     border-radius: 30.5px;
 }
 .descripcion_user {
