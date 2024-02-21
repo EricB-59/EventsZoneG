@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $("#button-AjustarCuenta").click(function(){
-        $("#ajustarCuenta_ALL").css("display", "inline-block");
+        let estadoActual = $("#ajustarCuenta_ALL").css("display");
+        if (estadoActual === "none") {
+            $("#ajustarCuenta_ALL").css("display", "inline-block");
+        }else{
+            $("#ajustarCuenta_ALL").css("display", "none");
+        }
     });
 });
-
