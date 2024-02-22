@@ -7,6 +7,7 @@ $(document).ready(function(){
 
 function divCursorInValorant() {
     $("#EVENTO-VALORANT-FIGURA").animate({"right":"+=2%"},{duration:500})
+    $("#LOGO-VALORANT").animate({"transform:scale":"+=(45%, 50%)"},{duration:500})    
 }
 function divCursorOutValorant() {
     $("#EVENTO-VALORANT-FIGURA").animate({"right":"-=2%"},{duration:500})
