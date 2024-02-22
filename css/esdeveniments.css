@@ -304,7 +304,7 @@ body, html{
 
 }
 
-
+/*
 #DIV-VALORANT:hover #EVENTO-VALORANT-FIGURA{
     right: 46%;
 }
@@ -336,7 +336,7 @@ body, html{
     scale: 130%;
     transform: translate(16%, 30%);
 }
-
+*/
 .LOGOS{
     z-index: 2;
     position: absolute;
