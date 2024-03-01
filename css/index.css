@@ -1,3 +1,6 @@
+::root{
+    color-scheme: dark;
+}
 /*ESTRUCTURA*/
 body, html {
     width: 100%;
