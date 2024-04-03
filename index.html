@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventsZoneG</title>
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css"> 
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="js/index.js" defer></script>
+    <!-- FUENTES DE LETRA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/quantico" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/aldrich" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/sarpanch" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nats" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/krona-one" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/audiowide" rel="stylesheet">             
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER | MAIN PAGE -->
+    <header>
+        <div class="header-container">
+            <nav>
+                <div class="containermenu">
+                    <div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                    </div>
+                    <p>Menú</p>
+                </div>
+            </nav>
+            <div id="tituloHeader">
+                <h1>EventsZoneG</h1>
+            </div>
+            <img class="logo" src="images/Others/EventZoneG.svg" alt="Logo">
+            <img class="hexagonos" src="images/Others/Hexagonos.svg" alt="hex">
+            <div class="apartadouser">
+                <div class="fotouser"></div>
+                <div class="descripcion_user">
+                    <div>
+                        <p>NOMBRE USUARIO</p>
+                        <button id="button-AjustarCuenta"><img src="images/Others/flechaMenu.svg" alt="flecha"></button>
+                    </div>
+                    <!-- HEADER | AJUSTAR CUENTA -->
+                    <div class="container-ajustar" id="ajustarCuenta_ALL">
+                        <h1>AJUSTAR CUENTA</h1>
+                        <div class="foto-ajustarcuenta">
+                            <div class="foto">
+                                <div class="circulo-camara">
+                                    <img src="images/Others/camaraPerfil.svg" alt="cámara">
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" method="POST">
+                            <label class="name-user"> NUEVO NOMBRE USUARIO <br>
+                                <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
+                                <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO">
+                            </label>
+                            <div class="div-correo">
+                                <img src="images/Others/correo.svg" alt="icono">
+                                <input type="email" placeholder="CORREO ELECTRÓNICO"><br>
+                            </div>
+                            <div class="div-password">
+                                <img src="images/Others/password.svg" alt="icono">
+                                <input type="password" placeholder="CONTRASEÑA"><br>
+                            </div>
+                            <p class="regla">La contraseña debe tener al menos 5 caracteres.</p>
+                            <div class="div-password">
+                                <img src="images/Others/password.svg" alt="icono">
+                                <input type="password" placeholder="CONTRASEÑA"><br>
+                            </div>
+                            <div class="containerEnviar">
+                                <input class="boton-enviar" type="submit" value="CONFIRMAR CAMBIOS">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- HEADER | AJUSTAR CUENTA -->
+                    <div class="boton_perfil">
+                        <p>Perfil foro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-nav">
+            <div class="menusecciones">
+                <div class="seccion inicio">Inicio
+                    <img src="images/Others/house.svg" alt="inicio">
+                </div>
+                <div class="seccion eventos">Eventos</div>
+                <div class="seccion noticias">Noticias</div>
+                <div class="seccion foro">Foro</div>
+                <div class="seccion contacto">Contacto</div>
+            </div>
+            <div class="redes">
+                <a href="#" target="_blank">
+                    <div> <img src="images/Others/Instagram.svg" alt="I">
+                        <p>Instagram</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div> <img src="images/Others/Facebook.svg" alt="F">
+                        <p>Facebook</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- /HEADER | MAIN PAGE -->
+    <!-- ARTICULO DE NOVEDADES | MAIN PAGE -->
+    <article class="novedades">
+        <h1>NOVEDADES</h1>
+        <div class="div_secciones">
+            <h2 id="H2-EVENTSZONEG">EVENTSZONEG</h2>
+            <section>
+                <img src="images/News/LEC.png" alt="Img 1 Novedades">
+                <h4>¡VUELVE LA LEC!</h4>
+            </section>
+            <section>
+                <img src="images/News/mortalkombat.png" alt="Img 2 Novedades">
+                <h4>MORTAL KOMBAT</h4>
+            </section>
+            <section>
+                <img src="images/News/gamergy.png" alt="Img 3 Novedades">
+                <h4>GAMERGY EN IFEMA</h4>
+            </section>
+            <img class="img-genji" src="images/Others/yoshi.png" alt="Img Genji Overwatch">
+        </div>
+    </article>
+    <!-- /ARTICULO DE NOVEDADES | MAIN PAGE -->
+
+    <!-- ARTICULO DE EVENTOS | MAIN PAGE -->
+    <article id="ARTICLE-EVENTOS">
+        <h1 id="TITULO-SECTION-EVENTOS">EVENTOS</h1>
+        <a href="Esdeveniments.html" id="LINK-EVENTOS"><img src="images/Others/FIGURA-HN.png" alt="FIGURA-HN" id="IMG-FIGURA-EVENTOS"></a>
+        <div id="DIV-ARTICLE-EVENTOS">
+            <section class="section">
+                <img src="images/LeagueOFLegends/circuitTormentaIMG.png" alt="primerEvento" class="IMG-SECTION">
+                <h3 class="SECTION-TITULO-EVENTO">CIRCUITO TORMENTA</h3>
+            </section>
+            <section class="section">
+                <img src="images/DOTA2/dotaEvento.png" alt="segundoEvento" class="IMG-SECTION">
+                <h3 class="SECTION-TITULO-EVENTO">DOTA 2 CHAMPIONSHIPS</h3>
+            </section>
+            <section class="section">
+                <img src="images/Others/pubgEvento.png" alt="terceroEvento" class="IMG-SECTION">
+                <h3 class="SECTION-TITULO-EVENTO">PUBG CHAMPIONSHIPS</h3>
+            </section>
+            <h2 id="EVENTOS-TEXTLATERAL">EVENTSZONEG</h2>
+        </div>
+    </article>
+    <!-- /ARTICULO DE EVENTOS | MAIN PAGE -->
+
+
+    <!-- ARTICULO DE NOTICIAS | MAIN PAGE -->
+    <!-- /ARTICULO DE NOTICIAS | MAIN PAGE -->
+</body>
+</html>

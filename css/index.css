@@ -2,7 +2,7 @@
 body, html {
     width: 100%;
     font-family: 'Quantico';
-    background-image: url(circuitoVerde1.png);
+    background-image: url(../images/Others/circuitoGris.png);
     margin: 0;
 }
 /*/ESTRUCTURA*/
@@ -12,14 +12,12 @@ body, html {
     box-sizing: border-box;
     line-height: 1.5;
 }
-body {
-    margin: 0;
-}
 header {
     width: 100%;
     height: 184px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 .header-container {
     width: 100%;
@@ -126,7 +124,7 @@ nav {
 .fotouser {
     width: 61px;
     height: 61px;
-    background-image: url(../MAQUETACIÓN-WEB/imagenes/FotoPerfil.svg);
+    background-image: url(../images/Others/FotoPerfil.svg);
     border-radius: 30.5px;
 }
 .descripcion_user {
@@ -286,7 +284,178 @@ header > .header-nav > .redes {
 .redes a:nth-child(2) {
     margin-left: 18px;
 }
-
+/* AJUSTAR CUENTA
+*/
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+html {
+    height: 100%;
+}
+#ajustarCuenta_ALL{
+    display: none;
+}
+.container-ajustar {
+    position: absolute;
+    transform: translate(-60%, 23%);
+    width: 600px;
+    height: 660px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 4px 4px 15px rgba(4, 191, 104, 0.4);
+}
+.container-ajustar h1 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    font-family: 'NATS';
+    font-weight: normal;
+    margin: 0;
+    height: 97px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-top: 6px;
+}
+.foto-ajustarcuenta {
+    display: flex;
+    justify-content: center;
+}
+.foto {
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    background-image: url(../MAQUETACIÓN-WEB/imagenes/FotoPerfil.svg);
+    position: relative;
+    background-color: black;
+    background-size: cover;
+    border: 2px solid #707070;
+}
+.circulo-camara {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #707070;
+    position: absolute;
+    right: -7px;
+    bottom: -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.circulo-camara img {
+    width: 21px;
+}
+form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 17px;
+}
+input {
+    font-family: 'Inter';
+    font-size: 19px;
+    font-weight: normal;
+    width: 430px;
+    height: 45px;
+    border-radius: 19px;
+    border: 3px solid rgba(0, 0, 0, 0.46);
+    padding-left: 0px;
+    margin-left: 60px;
+}
+input::placeholder {
+    color: rgba(0, 0, 0, 0.21);
+    font-family: 'Inter';
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+}
+.input_nameuser::placeholder {
+    text-align: left;
+    padding-left: 10px;
+}
+.name-user {
+    font-family: 'Inter';
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.31);
+    font-weight: 700;
+    position: relative;
+}
+.icono-nameuser {
+    position: absolute;
+    top: 37px;
+    left: 8px;
+}
+.input_nameuser {
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+.name-user::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.57);
+    left: 0;
+    bottom: 0;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.div-correo {
+    position: relative;
+    margin-top: 21px;
+}
+.div-correo img {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+}
+.div-password {
+    position: relative;
+    margin-top: 21px;
+}
+.div-password img {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+}
+.regla {
+    font-family: 'Inter';
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.58);
+    font-weight: normal;
+    margin: 7px 0px 0px 0px;
+    width: 489px;
+}
+.containerEnviar {
+    margin-top: 33px;
+    width: 488px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.boton-enviar {
+    letter-spacing: 0.3px;
+    width: 242px;
+    height: 43px;
+    font-family: 'Audiowide', 'sans-serif';
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(4, 191, 104, 1);
+    border-radius: 12px;
+    background-color: transparent;
+    border: 4px solid rgba(4, 191, 104, 1);
+    box-shadow: 2px 2px 8px rgba(4, 191, 104, 0.32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
 
 /*@media screen and (max-width: 1484px) {
     .header-nav {
@@ -339,8 +508,9 @@ header {
     font-family: Quantico;
     color: #04BF68;
     background-color: rgb(4, 191, 104, 20%);
-    padding-left: 10px;
+    padding-left: 35px;
     padding-bottom: 10px;
+    padding-top: 10px;
     font-size: 3.5em;
     font-weight: bold;
     font-style: italic;
@@ -349,47 +519,62 @@ header {
 .novedades h2 {
     font-family: Quantico;
     color: #021859;
-    font-size: 2.5em;
-    margin-left: 0px;
+    font-size: 3em;
+    margin-left: 10px;
     writing-mode: vertical-lr;
     transform: rotate(360deg);
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: rgb(4, 191, 104, 80%);
-    transform: translate(0%, -8%);
+    transform: translate(0%, -5%);
 }
-.novedades {
+.novedades, #APARTADO-NOVEDADES {
     background-color: #021859;
-    margin-top: 190px;
-    width: 100%;
+    margin-top: 230px;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 15px;
+    margin-bottom: 2.5%;
 }
 .novedades h4 {
-    background-color: white;
-    font-family: Quantico;
-    font-size: 13px;
     text-align: center;
-    padding: 5px;
+    color: rgb(4, 191, 104, 80%);
+    font-family: Quantico;
+    font-size: 30px;
+    margin-right: 15%;
+    margin-left: 11px;
+    background-color: rgb(4, 191, 104, 20%);
     border-radius: 10px;
-    width: 350px;
-    
+    padding-top: 4%;
+    padding-bottom: 2%;
+    width: 370px; 
+    margin-top: -15px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(4, 191, 104, 20%);
+    border-bottom: rgb(4, 191, 104, 80%) 5px solid;
 }
 .novedades > .div_secciones section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .div_secciones {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     align-items:center;
-    margin-left: 15px;
+    margin-left: 10px;
 }
-.div_secciones section img {
-    width: 350px;
-    margin-top: -30px;
+.div_secciones section img, .IMG-NOVEDADES {
+    transform: translate(1.5%, 0%);
+    width: 370px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin: 5px;
+    border-radius: 5px; 
+    border-bottom: rgb(4, 191, 104, 80%) 5px solid;
 }
 .div_secciones img {
     color: white;
@@ -399,19 +584,35 @@ header {
     height: 350px;
     width: 400px;
 }
+
+
+
+@media screen and (max-width: 1700px) {
+    .img-genji{
+        display: none;
+    }
+}
+@media screen and (max-width: 1400px) {
+    #H2-EVENTSZONEG{
+        display: none;
+    }
+}
 /*/APARTADO NOVEDADES*/
 
 /*APARTADO EVENTOS*/
 /*ESTRUCTURA*/
 #DIV-ARTICLE-EVENTOS{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30% 1%;
     grid-template-rows: 100%;
     margin-left: 3%;
     margin-right: -2%;
 }
 #ARTICLE-EVENTOS{
-    width: 100%;
+    width: 95%;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 15px;
     display: grid;
     grid-template-columns: 19% 79%;
     grid-template-rows: 50% 50%;
@@ -433,11 +634,14 @@ header {
     object-fit: cover; 
     margin: 5px;
     border-radius: 10px; 
+    border-bottom: #000000 5px solid;
 }
 #IMG-FIGURA-EVENTOS{
-    width: 110%;
-    transform: translate(0%, -5%);
+    width: 95%;
+    transform: translate(10%, -3%);
     margin: 0;
+    border-right: 15px rgb(34, 57, 124, 50%) solid;
+    border-radius: 10px;
 }
 /*/ESTRUCTURA*/
 /*DISEÑO*/
@@ -448,17 +652,41 @@ header {
     font-family: Quantico;
     font-size: 30px;
     margin-right: 15%;
-    margin-left: 10%;
+    margin-left: 3%;
     background-color: rgb(34, 57, 124, 50%);
     border-radius: 10px;
     padding-top: 2%;
     padding-bottom: 2%;
-    width: 80%;
+    width: 94%;
+    margin-top: -15px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
+    border-bottom: #000000 5px solid;
 }
 .section{
     text-align: center;
+}
+#EVENTOS-TEXTLATERAL{
+    font-family: Quantico;
+    color: #000000;
+    font-size: 3em;
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    transform: translate(0%, 2%);
+    font-style: italic;
+    margin-left: 25px;
+}
+@media screen and (max-width: 1700px) {
+    #IMG-FIGURA-EVENTOS, #LINK-EVENTOS{
+        display: none;
+    }
+}
+@media screen and (max-width: 1400px) {
+    #EVENTOS-TEXTLATERAL{
+        display: none;
+    }
 }
 /*/DISEÑO*/
 /*/APARTADO EVENTOS*/
