@@ -15,16 +15,16 @@ $("#FORM_CONTACT").validate({
     },
     messages: {
         email:{
-            required: "INTRODUCE UN EMAIL",
-            email: "INTRODUCE UNA DIRRECCIÓN VALIDA DE CORREO ELECTRONICO"
+            required: "<div class=ERROR-VALIDATE>INTRODUCE UN EMAIL</div>",
+            email: "<div class=ERROR-VALIDATE>INTRODUCE UNA DIRRECCIÓN VALIDA DE CORREO ELECTRONICO</div>"
         },
         problem:{
-            required: "INTRODUCE UN PROBLEMA"
+            required: "<div class=ERROR-VALIDATE>INTRODUCE UN PROBLEMA</div>"
         },
         subject:{
-            required: "INTRODUCE UN ASUNTO",
-            minlength: "El asunto debe tener minimo 1 caracter",
-            maxlength: "El asunto debe tener maximo 200 caracter"
+            required: "<div class=ERROR-VALIDATE>INTRODUCE UN ASUNTO</div>",
+            minlength: "<div class=ERROR-VALIDATE>El asunto debe tener minimo 1 caracter</div>",
+            maxlength: "<div class=ERROR-VALIDATE>El asunto debe tener maximo 200 caracter</div>"
         }
     }
 })
