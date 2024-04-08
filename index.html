@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventsZoneG</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css"> 
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="js/index.js" defer></script>
     <!-- FUENTES DE LETRA -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +22,6 @@
     <link href="https://fonts.cdnfonts.com/css/krona-one" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/audiowide" rel="stylesheet">             
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <script src="/js/jquery-3.7.1.min.js"></script>
-    <script src="/js/index.js"></script>
 </head>
 <body>
     <!-- HEADER | MAIN PAGE -->
@@ -112,12 +115,11 @@
         </div>
     </header>
     <!-- /HEADER | MAIN PAGE -->
-
     <!-- ARTICULO DE NOVEDADES | MAIN PAGE -->
     <article class="novedades">
         <h1>NOVEDADES</h1>
         <div class="div_secciones">
-            <h2>EVENTSZONEG</h2>
+            <h2 id="H2-EVENTSZONEG">EVENTSZONEG</h2>
             <section>
                 <img src="images/News/LEC.png" alt="Img 1 Novedades">
                 <h4>¡VUELVE LA LEC!</h4>
@@ -138,7 +140,7 @@
     <!-- ARTICULO DE EVENTOS | MAIN PAGE -->
     <article id="ARTICLE-EVENTOS">
         <h1 id="TITULO-SECTION-EVENTOS">EVENTOS</h1>
-        <a href="Esdeveniments.html"><img src="images/Others/FIGURA-HN.png" alt="FIGURA-HN" id="IMG-FIGURA-EVENTOS"></a>
+        <a href="Esdeveniments.html" id="LINK-EVENTOS"><img src="images/Others/FIGURA-HN.png" alt="FIGURA-HN" id="IMG-FIGURA-EVENTOS"></a>
         <div id="DIV-ARTICLE-EVENTOS">
             <section class="section">
                 <img src="images/LeagueOFLegends/circuitTormentaIMG.png" alt="primerEvento" class="IMG-SECTION">
