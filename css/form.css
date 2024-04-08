@@ -1,0 +1,48 @@
+/*FORMULARIO*/
+    /* ESTRUCTURA */
+    #TITULO-FORM{
+        margin: 20px;
+    }
+
+    #DIV-FORM-CONTAINER{
+        width: 90%;
+    }
+
+    #FORM_CONTACT{
+        margin: 20px;
+    }
+
+    input[type=email], input[type=text]{
+        margin-bottom: 20px;
+        width: 80%;
+        height: 35px;
+        margin-right: 5px;
+        vertical-align: top;
+    }
+    #INPUT_SUBJECT{
+        height: 150px;
+    }
+
+    #INPUT_SUBMIT{
+        margin-left: 3.3%;
+    }
+    #INPUT_RESET{
+        margin-left: 58.5%;
+    }
+    /* /ESTRUCTURA */
+
+    /* STYLE */
+    #DIV-FORM-CONTAINER{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: FFFFFF;
+    }
+    input[type=email], input[type=text]{
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+    #INPUT_SUBJECT::placeholder{
+        
+    }
+    /* /STYLE */
+/*FORMULARIO*/

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE CONTACTO</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/dist/jquery.validate.min.js"></script>
+    <script src="js/form.js" defer></script>
+</head>
+<body>
+    <div id="DIV-FORM-CONTAINER">
+        <h1 id="TITULO-FORM">FORMULARIO DE CONTACTO</h1>
+        <form action="#" method="POST" id="FORM_CONTACT">
+            <label for="email">
+                <img src="images/CORREO.svg" alt="CORREO">
+                <input type="email" name="email" id="INPUT_EMAIL" placeholder="CORREO ELECTRÓNICO ACTUAL">
+            </label><br>
+            <label for="problem">
+                <img src="images/CORREO.svg" alt="CORREO">
+                <input type="text" name="problem" id="INPUT_PROBLEM" placeholder="QUE PROBLEMA TIENE?">
+            </label><br>
+            <label for="subject">
+                <img src="images/CORREO.svg" alt="CORREO">
+                <input type="text" name="subject" id="INPUT_SUBJECT" placeholder="ASUNTO">
+            </label><br>
+            <input type="submit" value="ENVIAR FORMULARIO" id="INPUT_SUBMIT">
+            <input type="reset" value="BORRAR FORMULARIO" id="INPUT_RESET">
+        </form>
+    </div>
+</body>
+</html>
