@@ -28,7 +28,3 @@ $("#FORM_CONTACT").validate({
         }
     }
 })
-
-$("#but-Validar").click(function () {
-    $("#FORM_CONTACT").valid();
-})

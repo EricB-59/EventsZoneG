@@ -46,6 +46,7 @@
         border-radius: 10px;
     }
     #INPUT_SUBJECT::placeholder{
+        color: red;
         
     }
 
