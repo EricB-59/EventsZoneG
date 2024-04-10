@@ -1,11 +1,13 @@
-/*ESTRUCTURA*/
+/*FONTS*/
+@font-face { font-family: TuercaBlackItalic; src: url('fonts/TuercaBlackItalic.ttf'); } 
+@font-face { font-family: NafteraBold; src: url('fonts/Naftera/NafteraBold.ttf'); } 
+/*/FONTS*/
+
 body, html {
     width: 100%;
-    font-family: 'Quantico';
     background-image: url(../images/Others/circuitoGris.png);
     margin: 0;
 }
-/*/ESTRUCTURA*/
 
 /*HEADER*/
 * {
@@ -62,8 +64,8 @@ nav {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.57);
     color: white;
     font-size: 20px;
-    font-family: 'Aldrich';
-    font-weight: normal;
+    font-family: 'Naftera';
+    font-weight: bold;
     user-select: none;
 }
 .containermenu:hover p {
@@ -95,15 +97,14 @@ nav {
     height: 100%;
     background-color: rgba(4, 118, 217, 0.25);
     clip-path: polygon(60px 0, 0 100%, 239px 100%, 100% 0);
-    z-index: 2;
 }
 #tituloHeader h1 {
     color: white;
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 50px;
     text-shadow: 4px 4px 3px #0476D9;
-    font-family: 'Quantico';
+    font-family: 'Tuerca';
     margin: 0;
+    z-index: 1;
 }
 .logo {
     margin-left: 26px;
@@ -138,7 +139,9 @@ nav {
     color: white;
     font-size: 16px;
     text-shadow: 4px 4px 3px rgba(2, 53, 38, 1);
-    font-family: 'Audiowide', sans-serif;                                             
+    font-family: 'Naftera';
+    font-size: 15px;
+    font-weight: bold;                                             
     font-style: normal;
     margin: 0;
 }
@@ -167,9 +170,9 @@ nav {
     margin-top: 7px;
 }
 .boton_perfil p {
-    font-size: 18px;
-    font-family:"Sarpanch", sans-serif;
-    font-weight: 600;   
+    font-size: 13px;
+    font-family: 'Naftera';
+    font-weight: bold;   
     text-shadow: 1.5px 1.5px 7px #023526;
     color: rgba(255, 255, 255, 0.87);
     margin: 0;
@@ -190,7 +193,8 @@ hr {
     box-shadow: 0 10px 20px #000000;
     align-items: center;
     position: relative;
-    padding: 0 29px 0 118px;
+    padding: 0 64px 0 30px;
+
     justify-content: space-between;
 }
 .header-nav::before {
@@ -204,7 +208,7 @@ hr {
     z-index: 2;
 }
 .menusecciones .seccion:not(:first-child){
-    margin-left: 27px;
+    margin-left: 40px;
 }
 .seccion {
     display: flex;
@@ -215,8 +219,9 @@ hr {
     background: linear-gradient(#22397C, #021859);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
     color: white;
-    font-family: 'Iceland';
-    font-size: 33px;
+    font-family: 'Naftera';
+    font-size: 24px;
+    font-weight: bold;
     border-radius: 10px;
     user-select: none;
 }
@@ -263,9 +268,9 @@ header > .header-nav > .redes {
 .redes a:nth-child(2) div p, 
 .redes a:first-child div p {
     color: white;
-    font-family: 'Oxanium';
-    font-weight: 520;
-    font-size: 15px;
+    font-family: 'Naftera';
+    font-weight: bold;
+    font-size: 11px;
     margin: 0;
     padding-top: 2.5px;
 }
@@ -284,472 +289,60 @@ header > .header-nav > .redes {
 .redes a:nth-child(2) {
     margin-left: 18px;
 }
-/* AJUSTAR CUENTA
-*/
-* {
-    box-sizing: border-box;
-    line-height: 1.5;
-}
-html {
-    height: 100%;
-}
-#ajustarCuenta_ALL{
-    display: none;
-}
-.container-ajustar {
-    position: absolute;
-    transform: translate(-60%, 23%);
-    width: 600px;
-    height: 660px;
-    background-color: white;
-    border-radius: 40px;
-    box-shadow: 4px 4px 15px rgba(4, 191, 104, 0.4);
-}
-.container-ajustar h1 {
-    font-size: 50px;
-    color: rgba(0, 0, 0, 0.55);
-    width: 100%;
-    font-family: 'NATS';
-    font-weight: normal;
-    margin: 0;
-    height: 97px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    margin-top: 6px;
-}
-.foto-ajustarcuenta {
-    display: flex;
-    justify-content: center;
-}
-.foto {
-    width: 91px;
-    height: 91px;
-    border-radius: 50%;
-    background-image: url(../MAQUETACIÓN-WEB/imagenes/FotoPerfil.svg);
-    position: relative;
-    background-color: black;
-    background-size: cover;
-    border: 2px solid #707070;
-}
-.circulo-camara {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #707070;
-    position: absolute;
-    right: -7px;
-    bottom: -9px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.circulo-camara img {
-    width: 21px;
-}
-form {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 17px;
-}
-input {
-    font-family: 'Inter';
-    font-size: 19px;
-    font-weight: normal;
-    width: 430px;
-    height: 45px;
-    border-radius: 19px;
-    border: 3px solid rgba(0, 0, 0, 0.46);
-    padding-left: 0px;
-    margin-left: 60px;
-}
-input::placeholder {
-    color: rgba(0, 0, 0, 0.21);
-    font-family: 'Inter';
-    font-size: 17px;
-    text-align: center;
-    font-weight: 500;
-}
-.input_nameuser::placeholder {
-    text-align: left;
-    padding-left: 10px;
-}
-.name-user {
-    font-family: 'Inter';
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.31);
-    font-weight: 700;
-    position: relative;
-}
-.icono-nameuser {
-    position: absolute;
-    top: 37px;
-    left: 8px;
-}
-.input_nameuser {
-    border-radius: 0;
-    border: none;
-    outline: none;
-}
-.name-user::before {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: rgba(0, 0, 0, 0.57);
-    left: 0;
-    bottom: 0;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-}
-.div-correo {
-    position: relative;
-    margin-top: 21px;
-}
-.div-correo img {
-    position: absolute;
-    top: 11px;
-    left: 12px;
-}
-.div-password {
-    position: relative;
-    margin-top: 21px;
-}
-.div-password img {
-    position: absolute;
-    top: 11px;
-    left: 14px;
-}
-.regla {
-    font-family: 'Inter';
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.58);
-    font-weight: normal;
-    margin: 7px 0px 0px 0px;
-    width: 489px;
-}
-.containerEnviar {
-    margin-top: 33px;
-    width: 488px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.boton-enviar {
-    letter-spacing: 0.3px;
-    width: 242px;
-    height: 43px;
-    font-family: 'Audiowide', 'sans-serif';
-    font-size: 16px;
-    font-weight: normal;
-    color: rgba(4, 191, 104, 1);
-    border-radius: 12px;
-    background-color: transparent;
-    border: 4px solid rgba(4, 191, 104, 1);
-    box-shadow: 2px 2px 8px rgba(4, 191, 104, 0.32);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+
+#IMG-FLECHA-MENU{
+    margin-top: 3px;
+    margin-left: 5px;
 }
 
-/*@media screen and (max-width: 1484px) {
+@media screen and (max-width: 1450px) {
+    .menusecciones .seccion:not(:first-child){
+        margin-left: 20px;
+    }
+    .header-nav{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header > .header-nav > .redes {
+        display: none;
+    }
+    .menusecciones .seccion:not(:first-child){
+        margin-left: 30px;
+    }
+    .header-nav{
+        padding-left: 70px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .descripcion_user > div:first-child p {
+        display: none;
+    }
+    .boton_perfil{
+        display: none;
+    }
+    .descripcion_user > div:first-child img {
+        width: 60px;
+    }
     .header-nav {
-        padding: 0 29px 0 109px;
-    }
-}*/
-
-
-/*@media screen and (max-width: 1024px) {
-header {
-    height: 147px;
-}
-.header-container{
-    height: 99px;
-}
-.header-nav {
-    height: 48px;
-    padding: 0 28px 0 57px;
-}
-.header-nav::before {
-    height: 48px;
-}
-.seccion {
-    width: 134px;
-    height: 30px;
-    font-size: 26px;
-}
-.redes a:first-child div {
-    width: 34.02px;
-    height: 33.1px;
-}
-.redes a:nth-child(2) div {
-    width: 34.02px;
-    height: 33.1px;
-}
-.redes a:nth-child(2) div p, 
-.redes a:first-child div p{
-    display: none;
-}
-.redes a:nth-child(2) div img, 
-.redes a:first-child div img{
-    margin: 0;
-}
-}*/
-
-
-/*/HEADER*/
-/*APARTADO NOVEDADES*/
- .novedades h1 {
-    font-family: Quantico;
-    color: #04BF68;
-    background-color: rgb(4, 191, 104, 20%);
-    padding-left: 35px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 3.5em;
-    font-weight: bold;
-    font-style: italic;
-    -webkit-text-stroke: 2.5px;
-}
-.novedades h2 {
-    font-family: Quantico;
-    color: #021859;
-    font-size: 3em;
-    margin-left: 10px;
-    writing-mode: vertical-lr;
-    transform: rotate(360deg);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(4, 191, 104, 80%);
-    transform: translate(0%, -5%);
-}
-.novedades, #APARTADO-NOVEDADES {
-    background-color: #021859;
-    margin-top: 230px;
-    width: 95%;
-    margin-left: 2.5%;
-    border-radius: 15px;
-    margin-bottom: 2.5%;
-}
-.novedades h4 {
-    text-align: center;
-    color: rgb(4, 191, 104, 80%);
-    font-family: Quantico;
-    font-size: 30px;
-    margin-right: 15%;
-    margin-left: 11px;
-    background-color: rgb(4, 191, 104, 20%);
-    border-radius: 10px;
-    padding-top: 4%;
-    padding-bottom: 2%;
-    width: 370px; 
-    margin-top: -15px;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(4, 191, 104, 20%);
-    border-bottom: rgb(4, 191, 104, 80%) 5px solid;
-}
-.novedades > .div_secciones section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.div_secciones {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items:center;
-    margin-left: 10px;
-}
-.div_secciones section img, .IMG-NOVEDADES {
-    transform: translate(1.5%, 0%);
-    width: 370px; 
-    height: 300px; 
-    object-fit: cover; 
-    margin: 5px;
-    border-radius: 5px; 
-    border-bottom: rgb(4, 191, 104, 80%) 5px solid;
-}
-.div_secciones img {
-    color: white;
-    margin-right: 5%;
-}
-.img-genji {
-    height: 350px;
-    width: 400px;
-}
-
-
-
-@media screen and (max-width: 1700px) {
-    .img-genji{
         display: none;
     }
-}
-@media screen and (max-width: 1400px) {
-    #H2-EVENTSZONEG{
+    .containermenu p {
         display: none;
     }
-}
-/*/APARTADO NOVEDADES*/
-
-/*APARTADO EVENTOS*/
-/*ESTRUCTURA*/
-#DIV-ARTICLE-EVENTOS{
-    display: grid;
-    grid-template-columns: 30% 30% 30% 1%;
-    grid-template-rows: 100%;
-    margin-left: 3%;
-    margin-right: -2%;
-}
-#ARTICLE-EVENTOS{
-    width: 95%;
-    width: 95%;
-    margin-left: 2.5%;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 19% 79%;
-    grid-template-rows: 50% 50%;
-}
-#TITULO-SECTION-EVENTOS{
-    grid-column: 3 span;
-    font-size: 30px;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
-    font-size: 4.5em;
-    font-weight: bold;
-    font-style: italic;
-    padding-left: 2%;
-    background-color: rgb(34, 57, 124, 50%);
-}
-.IMG-SECTION{
-    width: 400px; 
-    height: 300px; 
-    object-fit: cover; 
-    margin: 5px;
-    border-radius: 10px; 
-    border-bottom: #000000 5px solid;
-}
-#IMG-FIGURA-EVENTOS{
-    width: 95%;
-    transform: translate(10%, -3%);
-    margin: 0;
-    border-right: 15px rgb(34, 57, 124, 50%) solid;
-    border-radius: 10px;
-}
-/*/ESTRUCTURA*/
-/*DISEÑO*/
-#ARTICLE-EVENTOS{
-    background-color: rgb(34, 57, 124, 40%);
-}
-.SECTION-TITULO-EVENTO{
-    font-family: Quantico;
-    font-size: 30px;
-    margin-right: 15%;
-    margin-left: 3%;
-    background-color: rgb(34, 57, 124, 50%);
-    border-radius: 10px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 94%;
-    margin-top: -15px;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
-    border-bottom: #000000 5px solid;
-}
-.section{
-    text-align: center;
-}
-#EVENTOS-TEXTLATERAL{
-    font-family: Quantico;
-    color: #000000;
-    font-size: 3em;
-    writing-mode: vertical-lr;
-    transform: rotate(360deg);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
-    transform: translate(0%, 2%);
-    font-style: italic;
-    margin-left: 25px;
-}
-@media screen and (max-width: 1700px) {
-    #IMG-FIGURA-EVENTOS, #LINK-EVENTOS{
-        display: none;
+    .containermenu {
+        width: 60px;
     }
 }
-@media screen and (max-width: 1400px) {
-    #EVENTOS-TEXTLATERAL{
-        display: none;
+@media screen and (max-width: 800px) {
+    #tituloHeader {
+        margin-left: 20px;
+    }
+    .logo {
+        margin-left: 10px;
     }
 }
-/*/DISEÑO*/
-/*/APARTADO EVENTOS*/
 
-/*/DISEÑO*/
-
-/*LOGIN*/
-body {
-    font-family: Arial, sans-serif;
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.popup-content {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-form {
-    display: grid;
-    gap: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input {
-    padding: 8px;
-    font-size: 16px;
-}
-
-#showPopup:hover~#loginPopup {
-    display: flex;
-}
-
-#hidePopup:hover {
-    display: none;
-}
-
-/*/LOGIN*/
-
-/*MEDIA QUERIS*/
-
-/*/MEDIA QUERIS*/
+/* /HEADER */
