@@ -1,7 +1,11 @@
 /*FONTS*/
-@font-face { font-family: TuercaBlackItalic; src: url('fonts/TuercaBlackItalic.ttf'); } 
+@font-face { 
+    font-family: 'Tuerca'; 
+    src: url(fonts/TuercaBlackItalic.ttf); 
+} 
 @font-face { font-family: NafteraBold; src: url('fonts/Naftera/NafteraBold.ttf'); } 
 /*/FONTS*/
+
 
 body, html {
     width: 100%;
