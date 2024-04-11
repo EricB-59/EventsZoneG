@@ -1,9 +1,11 @@
 /*FONTS*/
 @font-face { 
-    font-family: 'Tuerca'; 
-    src: url(fonts/TuercaBlackItalic.ttf); 
+    font-family: 'TuercaBoldItalic'; 
+    src: url(../fonts/TuercaBlackItalic.ttf); 
 } 
-@font-face { font-family: NafteraBold; src: url('fonts/Naftera/NafteraBold.ttf'); } 
+@font-face { font-family: 'NafteraBold'; 
+    src: url(../fonts/Naftera/NafteraBold.ttf); 
+} 
 /*/FONTS*/
 
 
@@ -68,7 +70,7 @@ nav {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.57);
     color: white;
     font-size: 20px;
-    font-family: 'Naftera';
+    font-family: 'NafteraBold';
     font-weight: bold;
     user-select: none;
 }
@@ -143,7 +145,7 @@ nav {
     color: white;
     font-size: 16px;
     text-shadow: 4px 4px 3px rgba(2, 53, 38, 1);
-    font-family: 'Naftera';
+    font-family: 'NafteraBold';
     font-size: 15px;
     font-weight: bold;                                             
     font-style: normal;
@@ -175,7 +177,7 @@ nav {
 }
 .boton_perfil p {
     font-size: 13px;
-    font-family: 'Naftera';
+    font-family: 'NafteraBold';
     font-weight: bold;   
     text-shadow: 1.5px 1.5px 7px #023526;
     color: rgba(255, 255, 255, 0.87);
@@ -223,7 +225,7 @@ hr {
     background: linear-gradient(#22397C, #021859);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
     color: white;
-    font-family: 'Naftera';
+    font-family: 'NafteraBold';
     font-size: 24px;
     font-weight: bold;
     border-radius: 10px;
