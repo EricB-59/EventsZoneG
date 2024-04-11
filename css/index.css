@@ -9,7 +9,6 @@
 } 
 /*/FONTS*/
 
-
 body, html {
     width: 100%;
     background-image: url(../images/Others/circuitoGris.png);
@@ -351,5 +350,4 @@ header > .header-nav > .redes {
         margin-left: 10px;
     }
 }
-
 /* /HEADER */
