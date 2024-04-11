@@ -1,6 +1,6 @@
 // DESPLEGABLE DE AJUSTAR CUENTA
 $("#IMG-FLECHA-MENU").click(function(){
-    let estadoActual = $(".container-ajustar ").css("display");
+    let estadoActual = $(".container-ajustar").css("display");
     if (estadoActual === "none") {
         $(".container-ajustar").slideDown();
         $(".container-ajustar").css("display", "inline-block");
@@ -9,6 +9,19 @@ $("#IMG-FLECHA-MENU").click(function(){
         $(".container-ajustar").css("display", "none");
     }
 });
+
+// DESPLEGABLE DE MENU
+$(".containermenu").click(function(){
+    let estadoActual = $(".container-menu").css("display");
+    if (estadoActual === "none") {
+        $(".container-menu").slideDown();
+        $(".container-menu").css("display", "inline-block");
+    }else{
+        $(".container-menu").slideUp();
+        $(".container-menu").css("display", "none");
+    }
+});
+
 
 // VALIDATE AJUSTAR CUENTA
 $("#FORM-AJUSTARCUENTA").validate({
