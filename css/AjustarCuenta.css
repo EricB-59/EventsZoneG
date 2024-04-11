@@ -1,3 +1,14 @@
+/*FONTS*/
+@font-face { 
+    font-family: 'TuercaBoldItalic'; 
+    src: url(../fonts/TuercaBlackItalic.ttf); 
+} 
+@font-face { 
+    font-family: 'NafteraBold'; 
+    src: url(../fonts/Naftera/NafteraBold.ttf); 
+} 
+/*/FONTS*/
+
 * {
     box-sizing: border-box;
     line-height: 1.5;
@@ -17,13 +28,13 @@ body {
     height: 622px;
     background-color: white;
     border-radius: 40px;
-    box-shadow: 4px 4px 15px rgba(4, 191, 104, 0.4);
+    box-shadow: 5px 5px 30px rgba(4, 191, 104, 0.4);
 }
 .container-ajustar h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: rgba(0, 0, 0, 0.55);
     width: 100%;
-    font-family: 'NATS';
+    font-family: 'TuercaBoldItalic';
     font-weight: normal;
     margin: 0;
     height: 97px;
@@ -72,7 +83,7 @@ form {
     padding-top: 17px;
 }
 input {
-    font-family: 'Inter';
+    font-family: 'NafteraBold';
     font-size: 19px;
     font-weight: normal;
     width: 488px;
@@ -83,9 +94,9 @@ input {
 }
 input::placeholder {
     color: rgba(0, 0, 0, 0.21);
-    font-family: 'Inter';
+    font-family: 'NafteraBold';
     font-size: 17px;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
 }
 .input_nameuser::placeholder {
@@ -93,7 +104,7 @@ input::placeholder {
     padding-left: 10px;
 }
 .name-user {
-    font-family: 'Inter';
+    font-family: 'NafteraBold';
     font-size: 18px;
     color: rgba(0, 0, 0, 0.31);
     font-weight: 700;
@@ -138,7 +149,7 @@ input::placeholder {
     left: 14px;
 }
 .regla {
-    font-family: 'Inter';
+    font-family: 'NafteraBold';
     font-size: 15px;
     color: rgba(0, 0, 0, 0.58);
     font-weight: normal;
@@ -156,7 +167,7 @@ input::placeholder {
     letter-spacing: 0.3px;
     width: 242px;
     height: 43px;
-    font-family: 'Audiowide', 'sans-serif';
+    font-family: 'NafteraBold';
     font-size: 16px;
     font-weight: normal;
     color: rgba(4, 191, 104, 1);

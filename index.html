@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/index.css">
 
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/dist/jquery.validate.min.js"></script>
     <script src="slick-1.8.1/slick/slick.js"></script>
     <script src="js/index.js" defer></script>
 </head>
@@ -77,6 +78,38 @@
     <!-- MENU | MAIN PAGE -->
     <!-- /MENU | MAIN PAGE -->
     <!-- AJUSTAR CUENTA | MAIN PAGE -->
+    <div class="container-ajustar">
+        <h1>AJUSTAR CUENTA</h1>
+        <div class="foto-ajustarcuenta">
+            <div class="foto">
+                <div class="circulo-camara">
+                    <img src="images/Others/camaraPerfil.svg" alt="cámara">
+                </div>
+            </div>
+        </div>
+        <form action="#" method="POST" id="FORM-AJUSTARCUENTA">
+            <label class="name-user"> NUEVO NOMBRE USUARIO <br>
+                <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
+                <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
+            </label>
+            <div class="div-correo">
+                <img src="images/Others/correo.svg" alt="icono">
+                <input type="email" placeholder="CORREO ELECTRÓNICO" name="correoElectronico"><br>
+            </div>
+            <div class="div-password">
+                <img src="images/Others/password.svg" alt="icono">
+                <input type="password" placeholder="CONTRASEÑA" name="password"><br>
+            </div>
+            <p class="regla">La contraseña debe tener al menos 5 caracteres.</p>
+            <div class="div-password">
+                <img src="images/Others/password.svg" alt="icono">
+                <input type="password" placeholder="CONTRASEÑA" name="repeatPassword"><br>
+            </div>
+            <div class="containerEnviar">
+                <input class="boton-enviar" type="submit" value="CONFIRMAR CAMBIOS">
+            </div>
+        </form>
+    </div>
     <!-- /AJUSTAR CUENTA | MAIN PAGE -->
 
     <!-- TEXT-PRESENTATION | MAIN PAGE -->
