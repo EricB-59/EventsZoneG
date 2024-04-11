@@ -108,7 +108,7 @@ nav {
     color: white;
     font-size: 50px;
     text-shadow: 4px 4px 3px #0476D9;
-    font-family: 'Tuerca';
+    font-family: 'TuercaBoldItalic';
     margin: 0;
     z-index: 1;
 }
@@ -274,7 +274,7 @@ header > .header-nav > .redes {
 .redes a:nth-child(2) div p, 
 .redes a:first-child div p {
     color: white;
-    font-family: 'Naftera';
+    font-family: 'NafteraBold';
     font-weight: bold;
     font-size: 11px;
     margin: 0;
