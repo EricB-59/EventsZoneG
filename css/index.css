@@ -3,7 +3,8 @@
     font-family: 'TuercaBoldItalic'; 
     src: url(../fonts/TuercaBlackItalic.ttf); 
 } 
-@font-face { font-family: 'NafteraBold'; 
+@font-face { 
+    font-family: 'NafteraBold'; 
     src: url(../fonts/Naftera/NafteraBold.ttf); 
 } 
 /*/FONTS*/
