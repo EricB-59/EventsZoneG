@@ -38,12 +38,13 @@ $("#FORM-AJUSTARCUENTA").validate({
         password:{
             required: true,
             minlength: 5,
-            maxlength: 20
+            maxlength: 20,
         },
         repeatPassword:{
             required: true,
             minlength: 5,
-            maxlength: 200
+            maxlength: 200,
+            equalTo: '[name="password"]'
         }
     },
     messages: {
@@ -59,12 +60,15 @@ $("#FORM-AJUSTARCUENTA").validate({
         password:{
             required: "<div class=ERROR-VALIDATE>INTRODUCE UNA CONTRASEÑA</div>",
             minlength: "<div class=ERROR-VALIDATE>La contraseña debe tener mínimo 5 carácter</div>",
-            maxlength: "<div class=ERROR-VALIDATE>La contraseña debe tener máximo 20 carácter</div>"
+            maxlength: "<div class=ERROR-VALIDATE>La contraseña debe tener máximo 20 carácter</div>",
+            pattern: "<div class=ERROR-VALIDATE>La contraseña debe tener mínimo un número, una mayúscula y una minúscula</div>"
         },
         repeatPassword:{
             required: "<div class=ERROR-VALIDATE>INTRODUCE UNA CONTRASEÑA</div>",
             minlength: "<div class=ERROR-VALIDATE>La contraseña debe tener mínimo 5 carácter</div>",
-            maxlength: "<div class=ERROR-VALIDATE>La contraseña debe tener máximo 20 carácter</div>"
+            maxlength: "<div class=ERROR-VALIDATE>La contraseña debe tener máximo 20 carácter</div>",
+            equalTo: "<div class=ERROR-VALIDATE>LA CONTRASEÑA NO COINCIDE</div>",
+            pattern: "<div class=ERROR-VALIDATE>La contraseña debe tener mínimo un número, una mayúscula y una minúscula</div>"
         }
     }
 });

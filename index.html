@@ -13,6 +13,7 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/dist/jquery.validate.min.js"></script>
+    <script src="js/dist/additional-methods.js"></script>
     <script src="slick-1.8.1/slick/slick.js"></script>
     <script src="js/index.js" defer></script>
 </head>
@@ -107,12 +108,12 @@
             </div>
             <div class="div-password">
                 <img src="images/Others/password.svg" alt="icono">
-                <input type="password" placeholder="CONTRASEÑA" name="password"><br>
+                <input type="password" placeholder="CONTRASEÑA" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"><br>
             </div>
             <p class="regla">La contraseña debe tener al menos 5 caracteres.</p>
             <div class="div-password">
                 <img src="images/Others/password.svg" alt="icono">
-                <input type="password" placeholder="CONTRASEÑA" name="repeatPassword"><br>
+                <input type="password" placeholder="CONTRASEÑA" name="repeatPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"><br>
             </div>
             <div class="containerEnviar">
                 <input class="boton-enviar" type="submit" value="CONFIRMAR CAMBIOS">
@@ -122,6 +123,7 @@
     <!-- /AJUSTAR CUENTA | MAIN PAGE -->
 
     <!-- TEXT-PRESENTATION | MAIN PAGE -->
+    
     <!-- /TEXT-PRESENTATION | MAIN PAGE -->
 
     <!-- NOTICIAS-EVENTOS-NOVEDADES | MAIN PAGE -->
