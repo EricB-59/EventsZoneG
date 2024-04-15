@@ -18,6 +18,7 @@
     <script src="js/index.js" defer></script>
 </head>
 <body>
+    <div id="black_screen"></div>
     <!-- HEADER -->
     <header>
         <div class="header-container">
@@ -75,7 +76,8 @@
         </div>
     </header>
     <!-- /HEADER -->
-
+    <button id="UNIRSE-BUTTON">UNIRSE</button>
+    <button id="LOGIN-BUTTON">LOGIN</button>
     <!-- MENU | MAIN PAGE -->
     <div class="container-menu">
         <h1>MENU</h1>
@@ -87,6 +89,7 @@
         </div>
     </div>
     <!-- /MENU | MAIN PAGE -->
+
     <!-- AJUSTAR CUENTA | MAIN PAGE -->
     <div class="container-ajustar">
         <h1>AJUSTAR CUENTA</h1>
@@ -121,6 +124,60 @@
         </form>
     </div>
     <!-- /AJUSTAR CUENTA | MAIN PAGE -->
+    <!-- REGISTRAR CUENTA | MAIN PAGE -->
+    <div class="container-registrar">
+        <h1>REGISTRAR CUENTA</h1>
+        <button id="close_register_button_register"><img src="images/INDEX-IMGs/image 50.svg" alt="closeScreen"></button>
+        <div class="foto-ajustarcuenta">
+            <div class="foto">
+                <div class="circulo-camara">
+                    <img src="images/Others/camaraPerfil.svg" alt="cámara">
+                </div>
+            </div>
+        </div>
+        <form action="#" method="POST" id="FORM-REGISTRARCUENTA">
+            <label class="name-user"> NUEVO NOMBRE USUARIO <br>
+                <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
+                <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
+            </label>
+            <div class="div-correo">
+                <img src="images/Others/correo.svg" alt="icono">
+                <input type="email" placeholder="CORREO ELECTRÓNICO" name="correoElectronico"><br>
+            </div>
+            <div class="div-password">
+                <img src="images/Others/password.svg" alt="icono">
+                <input type="password" placeholder="CONTRASEÑA" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"><br>
+            </div>
+            <p class="regla">La contraseña debe tener al menos 5 caracteres.</p>
+            <div class="div-password">
+                <img src="images/Others/password.svg" alt="icono">
+                <input type="password" placeholder="CONTRASEÑA" name="repeatPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"><br>
+            </div>
+            <div class="containerEnviar">
+                <input class="boton-enviar" type="submit" value="CONFIRMAR CAMBIOS">
+            </div>
+        </form>
+    </div>
+    <!-- /REGISTRAR CUENTA | MAIN PAGE -->
+    <!-- LOGIN | MAIN PAGE -->
+    <div class="container-login">
+        <h1>LOGIN</h1>
+        <button id="close_register_button_login"><img src="images/INDEX-IMGs/image 50.svg" alt="closeScreen"></button>
+        <form action="#" method="POST" id="FORM-LOGINCUENTA">
+            <label class="name-user">NOMBRE USUARIO<br>
+                <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
+                <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
+            </label>
+            <div class="div-password">
+                <img src="images/Others/password.svg" alt="icono">
+                <input type="password" placeholder="CONTRASEÑA" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"><br>
+            </div>
+            <div class="containerEnviar">
+                <input class="boton-enviar" type="submit" value="CONFIRMAR CAMBIOS">
+            </div>
+        </form>
+    </div>
+    <!-- /LOGIN | MAIN PAGE -->
 
     <!-- TEXT-PRESENTATION | MAIN PAGE -->
     

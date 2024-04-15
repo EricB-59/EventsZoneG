@@ -14,6 +14,16 @@ body, html {
     background-image: url(../images/Others/circuitoGris.png);
     margin: 0;
 }
+#black_screen {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 2;
+}
 
 /*HEADER*/
 * {
@@ -530,6 +540,85 @@ input::placeholder {
     left: 15px;
 }
 /* /AJUSTAR CUENTA*/
+/* REGISTRAR CUENTA*/
+.container-registrar {
+    position: absolute;
+    top: -95px;
+    right: 600px;
+    z-index: 2;
+    width: 570px;
+    height: 640px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(4, 191, 104, 0.4);
+    margin-top: 200px;
+    display: none;
+}
+.container-registrar h1 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.55);
+    width: 94%;
+    font-family: 'TuercaBoldItalic';
+    font-weight: normal;
+    margin: 0;
+    height: 97px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-top: 10px;
+    transform: translate(14.8%, 30%);
+}
+#close_register_button_register{
+    display: inline-block;
+    width: 5%;
+    transform: translate(-115%, 15%);
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+/* /REGISTRAR CUENTA*/
+/* LOGIN*/
+.container-login {
+    position: absolute;
+    top: -95px;
+    right: 600px;
+    z-index: 2;
+    width: 570px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(4, 191, 104, 0.4);
+    margin-top: 200px;
+    display: none;
+}
+.container-login h1 {
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.55);
+    width: 94%;
+    font-family: 'TuercaBoldItalic';
+    font-weight: normal;
+    margin: 0;
+    height: 97px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-top: 10px;
+    transform: translate(36%, 15%);
+}
+#close_register_button_login{
+    display: inline-block;
+    width: 5%;
+    transform: translate(-115%, -20%);
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+#FORM-LOGINCUENTA{
+    padding-top: 0;
+}
+/* /LOGIN*/
 
 /* MENU */
 .container-menu{
@@ -579,3 +668,7 @@ input::placeholder {
     border-bottom: 3px solid rgba(0, 0, 0, 0.55);
 }
 /* /MENU */
+
+#UNIRSE-BUTTON{
+    margin-top: 200px;
+}
