@@ -24,6 +24,7 @@ body {
 .imagenGalleta img {
     width: 200px;
     display: inline-block;
+    transform: translate(0, 20%);
 }
 .imagenGalleta {
     width: 49%;
@@ -33,4 +34,41 @@ body {
 .cookies {
     display: inline-block;
     width: 49%;
+}
+.aceptar-cookies:hover {
+    background-color: rgb(12, 242, 93);
+    font-weight: bold;
+}
+.rechazar-cookies:hover {
+background-color: #A70000;
+color: white;
+font-weight: bold;
+}
+@media screen  and (max-width: 1000px ) {
+    .mensaje-cookies {
+        width: 400px;
+        height: 250px;
+    }
+
+    .imagenGalleta img {
+        width: 150px;
+        transform: translate(0,-5%);
+    }
+    .imagenGalleta{
+    display: inline-block;
+    }
+    .cookies p {
+        display: inline-block;
+    }
+    .rechazar-cookies {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 650px) {
+.mensaje-cookies {
+    width: 300px;
+}
+.imagenGalleta img{
+    transform: translate(0, -10%);
+}
 }
