@@ -7,16 +7,30 @@ body {
 
 .mensaje-cookies {
     width: 600px;
-    height: 100px;
+    height: 300px;
     margin: 3% 35%;
     text-align: center;
     border: 3px solid black;
     padding: 15px;
     border-radius: 15px;
 }
-.mensaje-cookies button {
+.cookies button {
     padding: 10px;
+    margin-right: 10px;
 }
 .aceptar-cookies {
     margin-right: 200px;
+}
+.imagenGalleta img {
+    width: 200px;
+    display: inline-block;
+}
+.imagenGalleta {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+}
+.cookies {
+    display: inline-block;
+    width: 49%;
 }
