@@ -1,9 +1,31 @@
-// DESPLEGABLE DE AJUSTAR CUENTA
+// DESPLEGABLE DE SUBMENU
 $("#IMG-FLECHA-MENU").click(function(){
+    let estadoActualSubMenu = $(".container-submenu").css("display");
+    let estadoActualAjustarCuenta = $(".container-ajustar").css("display");
+
+    if (estadoActualSubMenu === "none") {
+        if (estadoActualAjustarCuenta !== "none") {
+            $(".container-ajustar").slideUp();
+            $(".container-ajustar").css("display", "none");
+        }
+        $(".container-submenu").slideDown();
+        $(".container-submenu").css("display", "block");
+    }else{
+        $(".container-submenu").slideUp();
+        $(".container-submenu").css("display", "none");
+    }
+});
+
+
+// DESPLEGABLE DE AJUSTAR CUENTA
+$("#button_ajustarc").click(function(){
     let estadoActual = $(".container-ajustar").css("display");
     if (estadoActual === "none") {
+        $(".container-submenu").slideUp();
+        $(".container-submenu").css("display", "none");
+
         $(".container-ajustar").slideDown();
-        $(".container-ajustar").css("display", "inline-block");
+        $(".container-ajustar").css("display", "block");
     }else{
         $(".container-ajustar").slideUp();
         $(".container-ajustar").css("display", "none");
