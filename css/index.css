@@ -27,7 +27,8 @@
 
 body, html {
     width: 100%;
-    background-image: url(../images/Others/circuitoGris.png);
+    height: 120%;
+    background-image: url(../images/INDEX-IMGs/background.png);
     margin: 0;
 }
 #black_screen {
@@ -963,4 +964,4 @@ video {
         padding: 20px 20px;
     }
 }
-/* NOTICIAS-EVENTOS-NOVEDADES*/
+/* /NOTICIAS-EVENTOS-NOVEDADES*/
