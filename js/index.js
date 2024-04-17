@@ -225,7 +225,7 @@ $("#FORM-LOGINCUENTA").validate({
 
 // COOKIES
 let cookiesAceptadas = localStorage.getItem('cookiesAceptadas');
-$(".container-cookies").fadeIn();
+//$(".container-cookies").fadeIn();
 
 $('.login-registro').hide();
 $('.mensaje-rechazo-cookies').hide();
