@@ -7,6 +7,18 @@
     font-family: 'NafteraBold'; 
     src: url(../fonts/Naftera/NafteraBold.ttf); 
 } 
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url(../fonts/DrukWideBold.ttf);
+}
+@font-face {
+    font-family: 'MensuraRegular';
+    src: url(../fonts/MensuraRegular.ttf);
+}
+@font-face {
+    font-family: 'Tuerca';
+    src: url(../fonts/TuercaBlackItalic.ttf);
+}
 /*/FONTS*/
 
 body, html {
@@ -700,6 +712,97 @@ input::placeholder {
 #UNIRSE-BUTTON{
     margin-top: 200px;
 }
+
+/* TEXT-PRESENTATION*/
+.presentacion h1 {
+    font-size: 75px;
+    font-family: 'DrukWideBold';
+    margin: 0;
+}
+.presentacion h1:first-child {
+    background-image: linear-gradient(to right, #001756 25%,#1546d8 39%,#1546d8 63%,#001756 77%);
+    background-clip: text; /* Esta línea permite que el degradado se ajuste al texto */
+    -webkit-background-clip: text; /* Esta línea es necesaria para compatibilidad con navegadores webkit */
+    color: transparent;
+}
+.presentacion h1:nth-child(2), .presentacion h1:nth-child(3) {
+    color: #ECECEC;
+}
+.presentacion p {
+    margin: 0;
+    width: 692px;
+    text-align: center;
+    font-family: 'MensuraRegular';
+}
+.presentacion { 
+    display: inline-block;
+    position: relative;
+    margin-left: 68px; /*------*/
+    margin-bottom: 76px; /*------*/
+}
+
+
+.div-video {
+    width: 478px;
+    height: 571px;
+    position: relative; /**/
+    overflow: hidden; /**/
+    clip-path: polygon(104px 0px, 500px 0px, 478px 574px, 0px 574px);
+    position: relative;
+}
+video {
+    width: 1043px;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    left: -420px;
+}
+.linea-gif {
+    position: absolute;
+    width: 108px;
+    height: 574px;
+    clip-path: polygon( 108px 0px, 4px 574px, 0px 572px, 104px 0px);
+    background: linear-gradient(to bottom, rgba(0, 194, 255, 1), rgba(12, 242, 93, 1));
+    left: 889px;
+}
+
+.container-presentacion {
+    position: relative;
+    width: 1377px;
+    height: 571px;
+    clip-path: polygon( 0px 0px, 1377px 0px, 1377px 571px, 747px 571px, 677px 522px, 0px 522px);
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.texto-presentacion {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 118px;
+    font-size: 26px;
+}
+.centrar-container-presentacion {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.titulo-novedades {
+    position: absolute;
+    font-size: 60px;
+    bottom: 0;
+    left: 0;
+    font-family: 'Tuerca';
+    margin: 0;
+    background-image: linear-gradient(to right, rgba(2, 24, 89, 1), rgb(0 65 255));
+    background-clip: text; /* Esta línea permite que el degradado se ajuste al texto */
+    -webkit-background-clip: text; /* Esta línea es necesaria para compatibilidad con navegadores webkit */
+    color: transparent;
+}
+/* /TEXT-PRESENTATION*/
 
 /* COOKIES */
 .container-cookies{
