@@ -561,8 +561,8 @@ input::placeholder {
 /* REGISTRAR CUENTA*/
 .container-registrar {
     position: absolute;
-    top: -95px;
-    right: 600px;
+    top: 20%;
+    right: 33%;
     z-index: 2;
     width: 570px;
     height: 640px;
@@ -725,7 +725,7 @@ input::placeholder {
     font-size: 25px;
     width: 300px;
     height: 60px;
-    background-color: white;
+    background-color: #f2f2f2;
 }
 #UNIRSE-BUTTON p{
     font-size: 30px;
@@ -769,6 +769,7 @@ input::placeholder {
     position: relative;
     margin-left: 68px; /*------*/
     margin-bottom: 76px; /*------*/
+    margin-top: -50px;
 }
 .div-video {
     width: 478px;
@@ -798,7 +799,7 @@ video {
     width: 90%;
     height: 571px;
     clip-path: polygon( 0px 0px, 100% 0px, 100% 571px, 747px 571px, 677px 522px, 0px 522px);
-    background-color: #FAFAFA;
+    background-color: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: space-between;
