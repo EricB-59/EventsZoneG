@@ -700,3 +700,87 @@ input::placeholder {
 #UNIRSE-BUTTON{
     margin-top: 200px;
 }
+
+/* COOKIES */
+.container-cookies{
+    width: 650px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(4, 110, 191, 0.696);
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: 'NafteraBold';
+    font-size: 16px;
+}
+.mensaje-cookies {
+    width: 100%;
+    border-radius: 15px;
+}
+.cookies button {
+    padding: 10px;
+    margin-right: 5px;
+    font-family: 'TuercaBoldItalic';
+    font-size: 13px;
+    background-color: rgba(218, 218, 218, 0.752);
+    border-radius: 5px;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.696);
+}
+.imagenGalleta img {
+    position: relative;
+    top: 5px;
+    left: 30px;
+    margin: 0;
+    width: 150px;
+    display: inline-block;
+}
+.imagenGalleta {
+    width: 35%;
+    display: inline-block;
+}
+.cookies {
+    display: inline-block;
+    width: 64%;
+    position: relative;
+    top: -25px;
+}
+.aceptar-cookies:hover {
+    background-color: rgb(12, 242, 93);
+    font-weight: bold;
+}
+.rechazar-cookies:hover {
+    background-color: #A70000;
+    color: white;
+    font-weight: bold;
+}
+@media screen  and (max-width: 1000px ) {
+    .mensaje-cookies {
+        width: 400px;
+        height: 250px;
+    }
+
+    .imagenGalleta img {
+        width: 150px;
+        transform: translate(0,-5%);
+    }
+    .imagenGalleta{
+    display: inline-block;
+    }
+    .cookies p {
+        display: inline-block;
+    }
+    .rechazar-cookies {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .mensaje-cookies {
+        width: 300px;
+    }
+    .imagenGalleta img{
+        transform: translate(0, -10%);
+    }
+}
+/* /COOKIES */
