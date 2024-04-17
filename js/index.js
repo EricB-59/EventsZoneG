@@ -225,7 +225,7 @@ $("#FORM-LOGINCUENTA").validate({
 
 // COOKIES
 let cookiesAceptadas = localStorage.getItem('cookiesAceptadas');
-//$(".container-cookies").fadeIn();
+$(".container-cookies").fadeIn();
 
 $('.login-registro').hide();
 $('.mensaje-rechazo-cookies').hide();
@@ -234,15 +234,54 @@ $('.aceptar-cookies').click(function(){
     localStorage.setItem('cookiesAceptadas', true);
     $('.mensaje-cookies').hide();
     $('.mensaje-rechazo-cookies').hide();
-    $('.login-registro').show();
+    $(".container-cookies").fadeOut();
+        
+    let estadoActual = $(".container-login").css("display");
+    if (estadoActual === "none") {
+        $("#black_screen").css("display", "inline-block");
+        $(".container-login").fadeIn();
+        $(".container-login").css("display", "inline-block");
+    }else{
+        $(".container-login").fadeOut();
+        $(".container-login").css("display", "none");
+    };
 })
 $('.rechazar-cookies').click(function(){
     localStorage.setItem('cookiesAceptadas',false);
     $('.mensaje-cookies').hide();
     $('.mensaje-rechazo-cookies').show();
     $('.login-registro').hide();
+    $(".container-cookies").fadeOut();
 })
 $('.mensaje-rechazo-cookies').click(function(){
     $('.mensaje-cookies').show();
     $(this).hide();
 })
+
+$('.slider-novedades').slick({
+    dots: false, //puntos
+    infinite: true, 
+    speed: 300, //velocidad
+    autoplay: true,
+    autoplaySpeed: 2000, //Tarda en mostra la siguiente 
+    slidesToShow: 3, //Cuanto se muestras
+    slidesToScroll: 1, //cuantos pasan
+    arrows: true, //botones flechas
+    responsive: [
+      {
+        breakpoint: 800, //Menor de 800
+        settings: {
+            slidesToShow: 2,
+            arrows: false,
+            dots: true
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true
+        }
+      }
+    ]
+});

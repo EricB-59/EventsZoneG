@@ -19,6 +19,10 @@
     font-family: 'Tuerca';
     src: url(../fonts/TuercaBlackItalic.ttf);
 }
+@font-face {
+    font-family: 'MensuraBold';
+    src: url(../fonts/MensuraBold.ttf);
+}
 /*/FONTS*/
 
 body, html {
@@ -31,8 +35,9 @@ body, html {
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 130%;
     background-color: rgba(0, 0, 0, 0.55);
     z-index: 2;
 }
@@ -593,7 +598,7 @@ input::placeholder {
 /* LOGIN*/
 .container-login {
     position: absolute;
-    top: -95px;
+    top: 80px;
     right: 600px;
     z-index: 2;
     width: 570px;
@@ -709,8 +714,9 @@ input::placeholder {
 }
 /* /MENU */
 
-#UNIRSE-BUTTON{
+#UNIRSE-BUTTON, #LOGIN-BUTTON{
     margin-top: 200px;
+    font-size: 20px;
 }
 
 /* TEXT-PRESENTATION*/
@@ -765,10 +771,9 @@ video {
     background: linear-gradient(to bottom, rgba(0, 194, 255, 1), rgba(12, 242, 93, 1));
     left: 889px;
 }
-
 .container-presentacion {
     position: relative;
-    width: 1377px;
+    width: 1378px;
     height: 571px;
     clip-path: polygon( 0px 0px, 1377px 0px, 1377px 571px, 747px 571px, 677px 522px, 0px 522px);
     background-color: #FAFAFA;
@@ -776,8 +781,6 @@ video {
     align-items: center;
     justify-content: space-between;
 }
-
-
 .texto-presentacion {
     display: flex;
     justify-content: center;
@@ -789,12 +792,13 @@ video {
     display: flex;
     justify-content: center;
     position: relative;
+    top: 187px;
 }
 .titulo-novedades {
-    position: absolute;
+    position: relative;
     font-size: 60px;
-    bottom: 0;
-    left: 0;
+    top: 140px;
+    left: 300px;
     font-family: 'Tuerca';
     margin: 0;
     background-image: linear-gradient(to right, rgba(2, 24, 89, 1), rgb(0 65 255));
@@ -812,11 +816,12 @@ video {
     border-radius: 5px;
     box-shadow: 5px 5px 30px rgba(4, 110, 191, 0.696);
     display: none;
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 1px;
     left: 10px;
     font-family: 'NafteraBold';
     font-size: 16px;
+    z-index: 4;
 }
 .mensaje-cookies {
     width: 100%;
@@ -825,7 +830,7 @@ video {
 .cookies button {
     padding: 10px;
     margin-right: 5px;
-    font-family: 'TuercaBoldItalic';
+    font-family: 'Tuerca';
     font-size: 13px;
     background-color: rgba(218, 218, 218, 0.752);
     border-radius: 5px;
@@ -887,3 +892,75 @@ video {
     }
 }
 /* /COOKIES */
+
+/* NOTICIAS-EVENTOS-NOVEDADES*/
+.novedad {
+    width: 394px;
+    margin-bottom: 100px;
+    height: auto;
+    display: inline-block;
+}
+.novedad > p {
+    font-family: 'MensuraRegular';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+.novedad > h1 {
+    font-family: 'MensuraBold';
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 9px;
+    font-weight: 300;
+}
+.circulo-gradient {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #0436D9, #00C2FF);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.circulo-entremedio {
+    width: 92px;
+    height: 92px;
+    background-color: #F2F3F4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo-inferior {
+    width: 86px; /*85*/
+    height: 86px; /*85*/
+    background-color: #021859;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo {
+    display: flex;
+    justify-content: center;
+}
+.novedad-derecha {
+    text-align: right;
+}
+.novedad-centrar {
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .container-novedad {
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 1116px) {
+    .novedad > p {
+        padding: 20px 20px;
+    }
+}
+/* NOTICIAS-EVENTOS-NOVEDADES*/
