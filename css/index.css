@@ -708,7 +708,7 @@ input::placeholder {
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 30px rgba(4, 110, 191, 0.696);
-    display: inline-block;
+    display: none;
     position: absolute;
     bottom: 10px;
     left: 10px;

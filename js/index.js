@@ -224,7 +224,9 @@ $("#FORM-LOGINCUENTA").validate({
 });
 
 // COOKIES
-var cookiesAceptadas = localStorage.getItem('cookiesAceptadas');
+let cookiesAceptadas = localStorage.getItem('cookiesAceptadas');
+$(".container-cookies").fadeIn();
+
 $('.login-registro').hide();
 $('.mensaje-rechazo-cookies').hide();
 
