@@ -715,9 +715,28 @@ input::placeholder {
 }
 /* /MENU */
 
-#UNIRSE-BUTTON, #LOGIN-BUTTON{
-    margin-top: 200px;
+#UNIRSE-BUTTON{
+    position: relative;
+    margin-top: 230px;
     font-size: 20px;
+    right: 680px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 300px;
+    height: 60px;
+    background-color: white;
+}
+#UNIRSE-BUTTON p{
+    font-size: 30px;
+    position: relative;
+    transform: translate(-3%, -140%);
+    color: white;
+    font-family: 'Tuerca';
+}
+#UNIRSE-BUTTON:hover {
+    transform: translateY(-10px);
+    transition: all 0.7s ease 0s;
 }
 
 /* TEXT-PRESENTATION*/
@@ -736,6 +755,10 @@ input::placeholder {
     color: #ECECEC;
 }
 .presentacion p {
+    height: 70px;
+    position: relative;
+    top: 35px;
+    left: 40px;
     margin: 0;
     width: 692px;
     text-align: center;
@@ -747,8 +770,6 @@ input::placeholder {
     margin-left: 68px; /*------*/
     margin-bottom: 76px; /*------*/
 }
-
-
 .div-video {
     width: 478px;
     height: 571px;
@@ -770,13 +791,13 @@ video {
     height: 574px;
     clip-path: polygon( 108px 0px, 4px 574px, 0px 572px, 104px 0px);
     background: linear-gradient(to bottom, rgba(0, 194, 255, 1), rgba(12, 242, 93, 1));
-    left: 889px;
+    left: 65%;
 }
 .container-presentacion {
     position: relative;
-    width: 1378px;
+    width: 90%;
     height: 571px;
-    clip-path: polygon( 0px 0px, 1377px 0px, 1377px 571px, 747px 571px, 677px 522px, 0px 522px);
+    clip-path: polygon( 0px 0px, 100% 0px, 100% 571px, 747px 571px, 677px 522px, 0px 522px);
     background-color: #FAFAFA;
     display: flex;
     align-items: center;
@@ -799,7 +820,7 @@ video {
     position: relative;
     font-size: 60px;
     top: 140px;
-    left: 300px;
+    left: 10%;
     font-family: 'Tuerca';
     margin: 0;
     background-image: linear-gradient(to right, rgba(2, 24, 89, 1), rgb(0 65 255));
@@ -810,7 +831,7 @@ video {
 /* /TEXT-PRESENTATION*/
 
 /* COOKIES */
-.container-cookies{
+.container-cookies {
     width: 650px;
     height: 200px;
     border: 1px solid black;
@@ -894,6 +915,9 @@ video {
 /* /COOKIES */
 
 /* NOTICIAS-EVENTOS-NOVEDADES*/
+.slick-slider{
+    margin-top: 170px;
+}
 .novedad {
     width: 394px;
     margin-bottom: 100px;
