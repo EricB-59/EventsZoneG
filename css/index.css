@@ -26,10 +26,12 @@
 /*/FONTS*/
 
 body, html {
-    width: 100%;
-    height: 120%;
+    width: auto;
+    height: auto;
     background-image: url(../images/INDEX-IMGs/background.png);
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 #black_screen {
     display: none;
@@ -190,6 +192,25 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
+.descripcion_login {
+    display: inline-block;
+}
+
+#descripcion_login_div{
+    display: inline-block;
+    width: auto;
+}
+.descripcion_links{
+    display: inline-block;
+    width: auto;
+    font-family: 'NafteraBold';
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+
 .boton_perfil {
     width: 113px;
     height: 26px;
@@ -792,7 +813,7 @@ video {
     height: 574px;
     clip-path: polygon( 108px 0px, 4px 574px, 0px 572px, 104px 0px);
     background: linear-gradient(to bottom, rgba(0, 194, 255, 1), rgba(12, 242, 93, 1));
-    left: 65%;
+    left: 69%;
 }
 .container-presentacion {
     position: relative;

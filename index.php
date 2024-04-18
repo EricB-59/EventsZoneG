@@ -40,16 +40,35 @@
             <img class="logo" src="images/INDEX-IMGs/LOGO-final.svg" alt="Logo">
             <img class="hexagonos" src="images/Others/Hexagonos.svg" alt="hex">
             <div class="apartadouser">
-                <div class="fotouser"></div>
-                <div class="descripcion_user">
-                    <div>
-                        <p>NOMBRE USUARIO</p>
-                        <img src="images/INDEX-IMGs/FlechaMenuUsuario.svg" alt="flecha" id="IMG-FLECHA-MENU">
+            <?php
+            $i = 0;
+            if($i == 0){
+                echo '
+                    <div class="descripcion_login">
+                        <div id="descripcion_login_div">
+                            <p class="descripcion_links">REGISTRAR CUENTA</p>
+                            <p class="descripcion_links">|</p>
+                            <p class="descripcion_links">LOGIN</p>
+                        </div>
                     </div>
-                    <div class="boton_perfil">
-                        <p>PERFIL FORO</p>
+                    ';
+            } else {
+                echo '
+                    <div class="apartadouser">
+                        <div class="fotouser"></div>
+                        <div class="descripcion_user">
+                            <div>
+                                <p>NOMBRE USUARIO</p>
+                                <img src="images/INDEX-IMGs/FlechaMenuUsuario.svg" alt="flecha" id="IMG-FLECHA-MENU">
+                            </div>
+                            <div class="boton_perfil">
+                                <p>PERFIL FORO</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    ';
+            }
+            ?>
             </div>
         </div>
         <hr>
