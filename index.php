@@ -41,6 +41,8 @@
             <img class="hexagonos" src="images/Others/Hexagonos.svg" alt="hex">
             <div class="apartadouser">
             <?php
+            require_once "./php/dataBaseManagement.php";
+            
             $i = 0;
             if($i == 0){
                 echo '
