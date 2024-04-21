@@ -70,3 +70,18 @@ article:hover img:last-child{
     opacity: 1;
     transform: translateY(10%);
 }
+
+
+#valorantEventFigura{
+    transform: translateY(0%);
+}
+#leagueOfLegendsEventFigura {
+    transform: translateY(0%);
+}
+#CSGOEventfigura {
+    width: 270px;
+    transform: translateY(2%);
+}
+#dota2EventFigura {
+    width: 270px;
+}
