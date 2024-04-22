@@ -33,7 +33,7 @@ $("#button_ajustarc").click(function(){
 });
 
 // DESPLEGABLE DE REGISTRAR
-$("#UNIRSE-BUTTON").click(function(){
+$("#header_REGISTRARCUENTA_button").click(function(){
     let estadoActual = $(".container-registrar").css("display");
     if (estadoActual === "none") {
         $("#black_screen").css("display", "inline-block");

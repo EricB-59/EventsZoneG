@@ -206,8 +206,9 @@ nav {
     width: auto;
     font-family: 'NafteraBold';
     font-size: 25px;
-    color: white;
+    color: black;
     font-weight: bold;
+    background-color: red;
 }
 
 

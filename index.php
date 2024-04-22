@@ -53,9 +53,9 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
                 echo '
                     <div class="descripcion_login">
                         <div id="descripcion_login_div">
-                            <p class="descripcion_links">REGISTRAR CUENTA</p>
+                            <button class="descripcion_links" id="header_REGISTRARCUENTA_button">REGISTRAR CUENTA</button>
                             <p class="descripcion_links">|</p>
-                            <p class="descripcion_links">LOGIN</p>
+                            <button class="descripcion_links" id="header_LOGIN_button">LOGIN</button>
                         </div>
                     </div>
                     ';
@@ -169,8 +169,8 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
                 </div>
             </div>
         </div>
-        <form action="#" method="POST" id="FORM-REGISTRARCUENTA">
-            <label class="name-user"> NUEVO NOMBRE USUARIO <br>
+        <form action="/php/registerUser.php" method="POST" id="FORM-REGISTRARCUENTA">
+            <label class="name-user">NOMBRE USUARIO <br>
                 <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
                 <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
             </label>
