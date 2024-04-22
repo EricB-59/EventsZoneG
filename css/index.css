@@ -206,11 +206,15 @@ nav {
     width: auto;
     font-family: 'NafteraBold';
     font-size: 25px;
-    color: black;
+    color: white;
     font-weight: bold;
-    background-color: red;
+    background: linear-gradient(to right, rgba(2, 24, 89, 1), rgba(11, 76, 87, 1));
+    border: 1px solid transparent;
+    border-radius: 10px;
 }
-
+#header_BARRITA_button{
+    background: transparent;
+}
 
 .boton_perfil {
     width: 113px;

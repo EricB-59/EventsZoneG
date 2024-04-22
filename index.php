@@ -54,7 +54,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
                     <div class="descripcion_login">
                         <div id="descripcion_login_div">
                             <button class="descripcion_links" id="header_REGISTRARCUENTA_button">REGISTRAR CUENTA</button>
-                            <p class="descripcion_links">|</p>
+                            <p class="descripcion_links" id="header_BARRITA_button">|</p>
                             <button class="descripcion_links" id="header_LOGIN_button">LOGIN</button>
                         </div>
                     </div>
@@ -277,7 +277,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
                 </p>
             </div>
         </div>
-        <div class="container-novedad novedad-izquierda">
+        <div class="container-novedadnovedad-izquierda">
             <div class="novedad">
                 <div class="circulo">
                     <div class="circulo-gradient"> <!-- CIRCULOS -->
