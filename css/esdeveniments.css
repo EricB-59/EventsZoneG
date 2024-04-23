@@ -93,8 +93,8 @@ article:hover #CSGOEventfigura{
         translateX(32%)
 }
 article:hover #dota2EventFigura{
-    width: 270px;
+    width: 290px;
     transform: 
-        translateY(7%)
-        translateX(32%)
+        translateY(-1%)
+        translateX(26%)
 }
