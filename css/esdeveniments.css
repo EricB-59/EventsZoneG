@@ -1,12 +1,14 @@
 body, html{
-    background-color: rgb(242, 243, 244, 100%);
-    background-image: url(../images/Others/circuitoGris.png);
-    width: 100%;
-    text-align: center;
+    width: auto;
+    height: auto;
+    background-image: url(../images/INDEX-IMGs/background.png);
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #div-container {
-    padding: 50px;
+    padding: 40px;
     display: inline-block;
     width: 95%;
     position: relative;
@@ -31,9 +33,9 @@ article img:last-child{
     position: absolute;
     width: 300px;
     bottom: 0;
-    left: 0;
+    left: -75px;
     right: 0;
-    margin: auto;
+    margin: 0;
     transform: translate(25%);
     transition: .3s ease;
     opacity: 0;
@@ -66,22 +68,33 @@ article::before {
 article:hover::before{
     opacity: 1;
 }
+
 article:hover img:last-child{
     opacity: 1;
-    transform: translateY(10%);
+    
 }
 
-
-#valorantEventFigura{
-    transform: translateY(0%);
+article:hover #valorantEventFigura{
+    width: 290px;
+    transform: 
+        translateY(0.2%)
+        translateX(26%)
 }
-#leagueOfLegendsEventFigura {
-    transform: translateY(0%);
+article:hover #leagueOfLegendsEventFigura{
+    width: 290px;
+    transform: 
+        translateY(0%)
+        translateX(27%)
 }
-#CSGOEventfigura {
+article:hover #CSGOEventfigura{
     width: 270px;
-    transform: translateY(2%);
+    transform: 
+        translateY(2%)
+        translateX(32%)
 }
-#dota2EventFigura {
+article:hover #dota2EventFigura{
     width: 270px;
+    transform: 
+        translateY(7%)
+        translateX(32%)
 }

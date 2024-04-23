@@ -40,7 +40,7 @@ body, html {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 130%;
+    height: 210%;
     background-color: rgba(0, 0, 0, 0.55);
     z-index: 2;
 }
@@ -626,7 +626,7 @@ input::placeholder {
 .container-login {
     position: absolute;
     top: 80px;
-    right: 600px;
+    right: 500px;
     z-index: 2;
     width: 570px;
     height: 350px;

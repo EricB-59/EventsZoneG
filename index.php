@@ -305,7 +305,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
     <div class="container-cookies">
         <div class="mensaje-cookies">
             <div class="imagenGalleta">
-                <img src="/images/INDEX-IMGs/AceptarGalleta.PNG" alt="Aceptar Cookies">
+                <img src="images/INDEX-IMGs/AceptarGalleta.png" alt="Aceptar Cookies">
             </div>
             <div class="cookies">
                 <p> Este sitio web utiliza cookies para mejorar tu experiencia.
