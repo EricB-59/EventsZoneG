@@ -49,7 +49,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
             <?php
             require_once "./php/dataBaseManagement.php";
             
-            $i = 0;
+            $i = 1;
             if($i == 0){
                 echo '
                     <div class="descripcion_login">
