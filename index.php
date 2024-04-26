@@ -1,8 +1,6 @@
 <?php
 session_start();
 $_SESSION['user_information'] = array_fill(0, 3, null);
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,9 +46,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
             <div class="apartadouser">
             <?php
             require_once "./php/dataBaseManagement.php";
-            
-            $i = 1;
-            if($i == 0){
+            if(($_SESSION['user_information'] == null)){
                 echo '
                     <div class="descripcion_login">
                         <div id="descripcion_login_div">
@@ -121,7 +117,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
     <!-- SUB MENU-->
     <div class="container-submenu">
         <button id="button_ajustarc">Ajustar cuenta</button>
-        <button id="button_closes">Cerrar sesión</button>
+        <button id="button_closes?sesionClose.php">Cerrar sesión</button>
     </div>
     <!-- /SUB MENU-->
 
