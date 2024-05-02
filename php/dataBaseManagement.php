@@ -15,8 +15,8 @@ function desconect($conn) {
 
 /*
 function registerUser($nameUser , $email, $password){
-    $query = "INSERT INTO EventsZoneG. (nombre, telefono, sexo, edad, experiencia, especialidad) 
-              VALUE ('$name','$telephone','$gender','$age','$ageExperiencie','$espec')";
+    $query = "INSERT INTO EventsZoneG.user (nameUser, email, password) 
+              VALUE ('$nameUser','$email','$password')";
 
     $conn = conn();
     $result = $conn->query($query);
