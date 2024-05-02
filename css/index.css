@@ -6,7 +6,7 @@
 @font-face { 
     font-family: 'NafteraBold'; 
     src: url(../fonts/Naftera/NafteraBold.ttf); 
-} 
+}
 @font-face {
     font-family: 'DrukWideBold';
     src: url(../fonts/DrukWideBold.ttf);
@@ -14,10 +14,6 @@
 @font-face {
     font-family: 'MensuraRegular';
     src: url(../fonts/MensuraRegular.ttf);
-}
-@font-face {
-    font-family: 'Tuerca';
-    src: url(../fonts/TuercaBlackItalic.ttf);
 }
 @font-face {
     font-family: 'MensuraBold';
@@ -401,7 +397,7 @@ input::placeholder {
     position: relative;
     transform: translate(-3%, -140%);
     color: white;
-    font-family: 'Tuerca';
+    font-family: 'TuercaBoldItalic';
 }
 #UNIRSE-BUTTON:hover {
     transform: translateY(-10px);
@@ -491,7 +487,7 @@ video {
     font-size: 60px;
     top: 140px;
     left: 10%;
-    font-family: 'Tuerca';
+    font-family: 'TuercaBoldItalic';
     margin: 0;
     background-image: linear-gradient(to right, rgba(2, 24, 89, 1), rgb(0 65 255));
     background-clip: text; /* Esta línea permite que el degradado se ajuste al texto */
@@ -522,7 +518,7 @@ video {
 .cookies button {
     padding: 10px;
     margin-right: 5px;
-    font-family: 'Tuerca';
+    font-family: 'TuercaBoldItalic';
     font-size: 13px;
     background-color: rgba(218, 218, 218, 0.752);
     border-radius: 5px;
