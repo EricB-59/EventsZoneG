@@ -26,80 +26,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
 <body>
     <div id="black_screen"></div>
     <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <nav>
-                <div class="containermenu">
-                    <div>
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-                    </div>
-                    <p>MENÚ</p>
-                </div>
-            </nav>
-            <div id="tituloHeader">
-                <h1>EventsZoneG</h1>
-            </div>
-            <img class="logo" src="images/INDEX-IMGs/LOGO-final.svg" alt="Logo">
-            <img class="hexagonos" src="images/Others/Hexagonos.svg" alt="hex">
-            <div class="apartadouser">
-            <?php
-            require_once "./php/dataBaseManagement.php";
-            if(($_SESSION['user_information'] == null)){
-                echo '
-                    <div class="descripcion_login">
-                        <div id="descripcion_login_div">
-                            <button class="descripcion_links" id="header_REGISTRARCUENTA_button">REGISTRAR CUENTA</button>
-                            <p class="descripcion_links" id="header_BARRITA_button">|</p>
-                            <button class="descripcion_links" id="header_LOGIN_button">LOGIN</button>
-                        </div>
-                    </div>
-                    ';
-            } else {
-                echo '
-                    <div class="apartadouser">
-                        <div class="fotouser"></div>
-                        <div class="descripcion_user">
-                            <div>
-                                <p>NOMBRE USUARIO</p>
-                                <img src="images/INDEX-IMGs/FlechaMenuUsuario.svg" alt="flecha" id="IMG-FLECHA-MENU">
-                            </div>
-                            <div class="boton_perfil">
-                                <p>PERFIL FORO</p>
-                            </div>
-                        </div>
-                    </div>
-                    ';
-            }
-            ?>
-            </div>
-        </div>
-        <hr>
-        <div class="header-nav">
-            <div class="menusecciones">
-                <div class="seccion inicio">INICIO
-                    <img src="images/Others/house.svg" alt="inicio">
-                </div>
-                <div class="seccion eventos">EVENTOS</div>
-                <div class="seccion noticias">NOTICIAS</div>
-                <div class="seccion foro">FORO</div>
-                <div class="seccion contacto">CONTACTO</div>
-            </div>
-            <div class="redes">
-                <a href="#" target="_blank">
-                    <div> <img src="images/Others/Instagram.svg" alt="I">
-                        <p>INSTAGRAM</p>
-                    </div>
-                </a>
-                <a href="#" target="_blank">
-                    <div> <img src="images/Others/Facebook.svg" alt="F">
-                        <p>FACEBOOK</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </header>
+    
     <!-- /HEADER -->
 
     <!-- MENU | MAIN PAGE -->
@@ -167,7 +94,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
             </div>
         </div>
         <form action="/php/registerUser.php" method="POST" id="FORM-REGISTRARCUENTA">
-            <label class="name-user">NOMBRE USUARIO <br>
+            <label class="name-user">NOMBRE USUARIO<br>
                 <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
                 <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
             </label>
