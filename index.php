@@ -116,6 +116,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
             </div>
         </form>
     </div>
+    
     <!-- /REGISTRAR CUENTA | MAIN PAGE -->
     <!-- LOGIN | MAIN PAGE -->
     <div class="container-login">
