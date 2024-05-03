@@ -58,7 +58,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
                 </div>
             </div>
         </div>
-        <form action="#" method="POST" id="FORM-AJUSTARCUENTA">
+        <form action="/php/updateUser.php" method="POST" id="FORM-AJUSTARCUENTA">
             <label class="name-user"> NUEVO NOMBRE USUARIO <br>
                 <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
                 <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
@@ -121,7 +121,7 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
     <div class="container-login">
         <h1>LOGIN</h1>
         <button id="close_register_button_login"><img src="images/INDEX-IMGs/image 50.svg" alt="closeScreen"></button>
-        <form action="#" method="POST" id="FORM-LOGINCUENTA">
+        <form action="/php/loginUser.php" method="POST" id="FORM-LOGINCUENTA">
             <label class="name-user">NOMBRE USUARIO<br>
                 <img class="icono-nameuser" src="images/Others/lapiz.svg" alt="icono">
                 <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
