@@ -1,5 +1,4 @@
 <?php
-Victor Peruano
 session_start();
 $_SESSION['user_information'] = array_fill(0, 3, null);
 ?>
