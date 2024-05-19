@@ -11,7 +11,7 @@ body, html{
     display: inline-block;
     width: 95%;
     position: relative;
-    top: 200px;
+    top: 110px;
     text-align: center
 }
 article {
@@ -96,4 +96,61 @@ article:hover #dota2EventFigura{
     transform: 
         translateY(-1%)
         translateX(26%)
+}
+
+#div-container-buttons{
+    position: relative;
+    bottom: -90px;
+    width: 10%;
+    height: 10%;
+    margin-left: 35%;
+}
+
+#first-button {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+}
+
+#exteriorButton{
+    position: absolute;
+    top: -7px;
+    left: -4px;
+}
+
+@font-face { 
+    font-family: 'TuercaBoldItalic'; 
+    src: url(../fonts/TuercaBlackItalic.ttf); 
+} 
+
+#textoButtonFirst{
+    z-index: 1;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 18px;
+    font-family: 'TuercaBoldItalic';
+}
+
+
+#div-second-button{
+    margin-left: 500px;
+    position: absolute;
+    top: -7px;
+    left: -4px;
+}
+
+#textoButtonSecond{
+    z-index: 1;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: -53px;
+    font-family: 'TuercaBoldItalic';
+}
+
+#second-button {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    top: 9px;
+    left: 4%;
 }
