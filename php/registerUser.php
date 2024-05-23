@@ -22,6 +22,9 @@ if (!($password === $repeatPassword)) {
     if (registerUser($nombreUsuario , $correoElectronico, $password)) {
         // REGISTRO COMPLETO
         // ABRIR LOGIN
+        session_start();
+        
+        header("Location: ../index.php");
     }else {
         // ERROR DURANTE EL REGISTRO
         header("Location: ../index.php");

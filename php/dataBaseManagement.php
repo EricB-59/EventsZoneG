@@ -1,6 +1,6 @@
 <?php
 function conn() {
-    $servername = "localhost"; $username = "root"; $password = ""; $dbname = "eventszoneg";
+    $servername = "localhost"; $username = "root"; $password = ""; $dbname = "EventsZoneG";
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
@@ -14,8 +14,7 @@ function desconect($conn) {
 }
 
 function registerUser($nameUser , $email, $password){
-    $query = "INSERT INTO EventsZoneG.user (nameUser, emailUser, passwordUser, typeUser) 
-              VALUE ('$nameUser','$email','$password',2)";
+    $query = "CALL CrearUsuario('$nameUser','$email','$password',2)";
     $conn = conn();
     $result = $conn->query($query);
     desconect($conn);

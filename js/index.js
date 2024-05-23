@@ -161,12 +161,12 @@ $("#FORM-REGISTRARCUENTA").validate({
             minlength: 5,
             maxlength: 20,
         },
-        repeatPassword:{
-            required: true,
-            minlength: 5,
-            maxlength: 200,
-            equalTo: '[name="password"]'
-        }
+        //repeatPassword:{
+        //    required: true,
+        //    minlength: 5,
+        //    maxlength: 200,
+        //    equalTo: '[name="password"]'
+        //}
     },
     messages: {
         nombreUsuario: {

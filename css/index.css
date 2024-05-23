@@ -235,7 +235,7 @@ input::placeholder {
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(4, 191, 104, 0.4);
     margin-top: 200px;
-    display: none;
+    display: inline;
 }
 .container-registrar h1 {
     font-size: 30px;
