@@ -11,10 +11,12 @@ if (strlen($password) <= 4) {
 
 require_once "dataBaseManagement.php";
 $user = loginUser($nombreUsuario, $password);
+echo $nombreUsuario, $password, $user;
 while ($fila = mysqli_fetch_array($user)) {
     if ($fila['nameUser'] == $nombreUsuario && $fila['passwordUser'] === $password) {
         session_start();
         $_SESSION['user_information'] = [$fila['typeUser'], $fila['nameUser'], $fila['passwordUser']];
+        header("Location: ../index.php");
     }
 }
 ?>
