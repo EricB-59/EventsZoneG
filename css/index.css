@@ -310,7 +310,7 @@ input::placeholder {
     width: 230px;
     height: 80px;
     border-radius: 10px;
-    display: none;
+    display: inline;
     text-align: center;
     right: 20px;
     top: 200px;
