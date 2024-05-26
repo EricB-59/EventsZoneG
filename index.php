@@ -31,8 +31,9 @@ $_SESSION['user_information'] = array_fill(0, 3, null);
 
     <!-- MENU | MAIN PAGE -->
     <div class="container-menu">
-        <h1>MENU</h1>
+        <h1>EventsZoneG</h1>
         <div class="container-menu-enlaces">
+            <a href="index.php">INICIO</a>
             <a href="esdeveniments.html">EVENTOS</a>
             <a href="noticias.html">NOTICIAS</a>
             <a href="#">FORO</a>
