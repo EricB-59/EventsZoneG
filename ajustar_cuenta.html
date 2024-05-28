@@ -14,7 +14,7 @@
             <h1>Ajustar cuenta</h1>
             <p>Bienvenido a los ajustes de tu cuenta</p>
         </div>
-        <form action="registrar.php" method="post" id="FORM-REGISTRARCUENTA" enctype="multipart/form-data">
+        <form action="verificaciones_ajax/ajustar_cuenta.php" method="post" id="FORM-REGISTRARCUENTA" enctype="multipart/form-data">
             <div class="centrar-user-img">
                 <div class="user-img">
                     <img src="Imagenes/Foto-Perfil.svg" class="photo">
@@ -25,12 +25,12 @@
             <div class="centrar-container-inputs">
                 <div class="container-inputs-registrar">
                     <div class="input-bx input-bx-registro">
-                        <input class="input_nameuser" type="text" name="nombreUsuarioRegistro" required>
+                        <input class="input_nameuser" type="text" name="nombreUsuarioAjustar" required>
                         <span>Nombre de usuario</span>
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-bx input-bx-registro">
-                        <input type="email" name="correoElectronico" id="email-verificacion" required>
+                        <input type="email" name="correoElectronicoAjustar" id="email-verificacion" required>
                         <span>Email</span>
                         <i class="uil uil-envelope"></i>
                     </div>
@@ -46,13 +46,13 @@
                     </div>
                     <div class="contenedor-toast"></div>
                     <div class="container-boton-registrar">
-                        <input class="boton-login" type="submit" value="Actualizar" required>
+                        <input type="button" value="VALIDAR" id="VALIDAR-AJAX" class="boton-login">
                     </div>
                 </div>
             </div>
+            
         </form>
         <img id="cerrar-modal-registro" src="Imagenes/x.svg">
     </div>
-    <button id="VALIDAR-AJAX">VALIDAR</button>
 </body>
 </html>

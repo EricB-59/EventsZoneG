@@ -3,29 +3,25 @@ $valido = true;
 //-----------------------------------------------------------------------------------
 require "../bbdd.php";
 
-$name = $_POST['nombreUsuarioRegistro'];
-if ($name) {
+$nombreUsuario = $_POST['nombreUsuarioAjustar'];
+if (strlen($nombreUsuario) <= 4) {
     $valido = false;
 }
-
-$email = $_POST['correoElectronico'];
-if ($email) {
+$correoElectronico = $_POST['correoElectronicoAjustar'];
+if (strlen($correoElectronico) <= 4) {
     $valido = false;
 }
-
 $password = $_POST['password'];
-if ($password) {
+if (strlen($password) <= 4) {
     $valido = false;
 }
-
-$repeatPassword = $_POST['repeatPassword'];
-if ($repeatPassword) {
-    $valido = false;
-}
+$valido = ($password == $_POST['repeatPassword']);
 
 if ($valido) {
+    session_start();
+    $nombreSession = $_SESSION['nameUser'];
     $conexion = conectar("localhost", "root", "", "eventzoneg");
-    $select = "UPDATE eventzoneg.usuario SET nombreUsuario = '$name', correoElectronico = '$email', contraseña = '$password'";
+    $select = "UPDATE eventzoneg.usuario SET nombreUsuario = '$nombreUsuario', correoElectronico = '$correoElectronico', contraseña = '$password' WHERE nombreUsuario ='$nombreSession'";
     $resultado = mysqli_query($conexion, $select);
 }
 
