@@ -156,6 +156,9 @@ nav {
     z-index: 1;
 }
 
+.apartadouser {
+    z-index: 101;
+}
 /*H E X A G O N O S ---------------------------------------------------------------------------------------*/
 
 .hexagonos {
@@ -282,13 +285,15 @@ nav {
     margin-left: auto;
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 101;
 }
 
 .border-fotouser {
     width: 76px;
     height: 76px;
     border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
     border: 2px solid #0CF25D;
     display: flex;
     justify-content: center;
@@ -308,6 +313,7 @@ nav {
     object-fit: cover;
     object-position: center;
     cursor: pointer;
+    user-select: none;
 }
 
 .descripcion_user {
@@ -325,11 +331,13 @@ nav {
     font-size: 20.5px;
     font-family: 'MensuraBold';
     margin: 0;
+    padding-top: 6px;
 }
 
 .descripcion_user>div:first-child div {
     width: 24px;
     height: 24px;
+    position: relative;
     border-radius: 50%;
     background-color: rgba(217, 217, 217, 0.35);
     margin-left: 12px;
@@ -350,7 +358,7 @@ nav {
     align-items: center;
     justify-content: center;
     font-style: normal;
-    margin-top: 7px;
+    margin-top: 9px;
 }
 
 .boton_perfil p {
@@ -1163,8 +1171,7 @@ video {
 /*--------------------------------------------*/
 /*           MENSAJE EMAIL REPETIDO           */
 /*--------------------------------------------*/
-.toast-email {
-    box-sizing: border-box;
+.toast-email-error {
     width: 370px;
     border: 2px solid  #E60221;
     border-radius: 8px;
@@ -1173,8 +1180,9 @@ video {
     padding: 5px;
     display: flex;
     align-items: center;
+    margin-top: 17px;
 }
-.contenedor-icono {
+.contenedor-icono-error {
     background-color: #FCD9DE;
     width: 32px;
     height: 32px;
@@ -1183,14 +1191,116 @@ video {
     justify-content: center;
     align-items: center;
 }
-.contenedor-icono i {
+.contenedor-icono-error i {
     color: #E50021;
     font-size: 19px;
 }
-.toast-email div:nth-of-type(2) * {
+.toast-email-error div:nth-of-type(2) * {
     margin: 0;
     margin-left: 11px;
+    font-family: 'Aldrich';
 }
+.toast-email-error div:nth-of-type(2) span {
+    font-size: 15px;
+    color: #E50021;
+}
+.toast-email-error div:nth-of-type(2) p {
+    font-size: 14px;
+}
+
+/*--------------------------------------------*/
+
+.toast-email-valido {
+    width: 370px;
+    border: 2px solid  #54BE59;
+    border-radius: 8px;
+    background-color: white;
+    height: 53px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+.contenedor-icono-valido {
+    background-color: #E4F5E7;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-icono-valido i {
+    color: #54BE59;
+    font-size: 19px;
+}
+.toast-email-valido div:nth-of-type(2) * {
+    margin: 0;
+    margin-left: 11px;
+    font-family: 'Aldrich';
+}
+.toast-email-valido div:nth-of-type(2) span {
+    font-size: 15px;
+    color: #54BE59;
+}
+.toast-email-valido div:nth-of-type(2) p {
+    font-size: 14px;
+}
+
+
+/*--------------------------------------------*/
+/*           submenu cerrar-session           */
+/*--------------------------------------------*/
+.container-cerrar-sesion {
+    position: absolute;
+    top: 130%;
+    right: 0;
+    background-color: #D9D9D9;
+    width: 230px;
+    border-radius: 15px;
+    height: 0px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 7px;
+    flex-direction: column;
+    box-shadow: none;
+    background: #D9D9D9;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.container-cerrar-sesion a {
+    width: 209px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0px;
+    color: #666666;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    font-family: 'Aldrich';
+    padding-top: 4px;
+    transition: color 0.2s ease, transform 0.3s ease;
+}
+.container-cerrar-sesion a:hover {
+    color: rgba(4, 191, 104, 1);
+    transform: scale(1.04);
+}
+.collapse.in {
+    display: flex;
+    height: 80px;
+}
+
+/* CSS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .container-noticias-buscadas .noticia-busqueda {
+    animation: fadeIn 0.5s ease-in;
+  }
 
 /* ###############################################################
               MEDIA QUERIES RECTANGULO PRESENTACION

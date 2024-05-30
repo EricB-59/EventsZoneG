@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <script src="jquery-3.7.1.min.js"></script>
+    <!-- BOOTSTRAP  JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!------------------->
     <script src="slick-1.8.1/slick/slick.js"></script>
     <script src="dist/jquery.validate.min.js"></script>
     <script src="dist/additional-methods.js"></script>
@@ -64,7 +67,13 @@
                     <div class="descripcion_user">
                         <div>
                             <p><?php echo $_SESSION['nameUser']; ?></p>
-                            <div> <img src="Imagenes/Flecha.svg"> </div>
+                            <div data-toggle="collapse" data-target="#showSpending">
+                                <img src="Imagenes/Flecha.svg">
+                                <nav class="container-cerrar-sesion" id="showSpending" class="collapse">
+                                    <a id="button_ajustarc">Ajustar cuenta</a>
+                                    <a id="button_cerrar-session" href="logout.php">Cerrar sesión</a>
+                                </nav>
+                            </div>
                         </div>
                         <div class="boton_perfil">
                             <p>Perfil foro</p>
@@ -291,18 +300,5 @@
         </div>
     </dialog>
 </body>
-
-
-
-
-<!--
-<label class="name-user">
-    <input class="input_nameuser" type="text" placeholder="NOMBRE USUARIO" name="nombreUsuario">
-</label>
-<div class="div-password">
-    <input type="password" placeholder="CONTRASEÑA" name="password"
-    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"><br>
-</div>
--->
 
 </html>

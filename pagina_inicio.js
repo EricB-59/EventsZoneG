@@ -178,8 +178,8 @@ $("#email-verificacion").on('change', function() {
     success: function(respuesta){
       if (respuesta == true) {
         $(".contenedor-toast").html(`
-          <div class="toast-email">
-              <div class="contenedor-icono">
+          <div class="toast-email-error">
+              <div class="contenedor-icono-error">
                   <i class="fa-solid fa-circle-exclamation"></i>
               </div>
               <div>
@@ -191,7 +191,17 @@ $("#email-verificacion").on('change', function() {
         //Deshabilitamos el botón de envío del formulario.
         $('#FORM-REGISTRARCUENTA input[type="submit"]').prop('disabled', true);
       } else {
-        $(".contenedor-toast").text('');
+        $(".contenedor-toast").html(`
+          <div class="toast-email-valido">
+              <div class="contenedor-icono-valido">
+                  <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>
+                  <span>Error en el email</span>
+                  <p>Este correo electrónico ya está en uso.</p>
+              </div>
+          </div>        
+        `);
         //Habilitamos el botón de envío del formulario.
         $('#FORM-REGISTRARCUENTA input[type="submit"]').prop('disabled', false);
       }
