@@ -1,0 +1,45 @@
+<div class="container-registro">
+    <div class="container-titulo-registrar">
+        <h1>Ajustar cuenta</h1>
+        <p>Bienvenido a los ajustes de tu cuenta</p>
+    </div>
+    <form action="verificaciones_ajax/ajustar_cuenta.php" method="post" id="FORM-REGISTRARCUENTA" enctype="multipart/form-data">
+        <div class="centrar-user-img">
+            <div class="user-img">
+                <img src="Imagenes/Foto-Perfil.svg" class="photo">
+                <input type="file" name="foto-perfil" accept="image/*" id="file">
+                <label for="file" id="subirfoto-btn"><span class="material-icons-outlined">photo_camera</span></label>
+            </div>
+        </div>
+        <div class="centrar-container-inputs">
+            <div class="container-inputs-registrar">
+                <div class="input-bx input-bx-registro">
+                    <input class="input_nameuser" type="text" name="nombreUsuarioAjustar" required>
+                    <span>Nombre de usuario</span>
+                    <i class="uil uil-user"></i>
+                </div>
+                <div class="input-bx input-bx-registro">
+                    <input type="email" name="correoElectronicoAjustar" id="email-verificacion" required>
+                    <span>Email</span>
+                    <i class="uil uil-envelope"></i>
+                </div>
+                <div class="input-bx input-bx-registro">
+                    <input type="password" name="password" id="pass" required>
+                    <span>Contraseña</span>
+                    <i class="uil uil-padlock"></i>
+                </div>
+                <div class="input-bx input-bx-registro">
+                    <input type="password" name="repeatPassword" id="passRepeat" required>
+                    <span>Confirmar contraseña</span>
+                    <i class="uil uil-padlock"></i>
+                </div>
+                <div class="contenedor-toast"></div>
+                <div class="container-boton-registrar">
+                    <input type="button" value="VALIDAR" id="VALIDAR-AJAX" class="boton-login">
+                </div>
+            </div>
+        </div>
+        
+    </form>
+    <img id="cerrar-modal-registro" src="Imagenes/x.svg">
+</div>
